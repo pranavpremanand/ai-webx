@@ -1,0 +1,43 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  background: #ffffff;
+}
+
+@layer utilities {
+  .wrapper {
+    @apply max-w-7xl mx-auto px-4 sm:px-6;
+  }
+  .primary-btn {
+    @apply bg-gradient-to-r rounded-full px-5 text-sm font-medium py-3 from-[#005DE0] to-[#CF00FE] text-white hover:-translate-y-1 hover:shadow-xl hover:to-[#005DE0] hover:from-[#CF00FE] cursor-pointer transition-all duration-300;
+  }
+  .link {
+    @apply cursor-pointer;
+  }
+  .blurred-green{
+    @apply bg-[#cef9f1] h-[30rem] w-[30rem] rounded-full blur-3xl absolute;
+  }
+  .blurred-purple{
+    @apply bg-[#ebe4fc] h-[30rem] w-[30rem] rounded-full blur-3xl absolute;
+  }
+  .active-item{
+    @apply text-[#CF00FE];
+  }
+}
