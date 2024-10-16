@@ -27,7 +27,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={1000}
-              offset={-80}
+              offset={-70}
               activeClass="active-item"
               className="text-sm cursor-pointer text-gray-700 hover:text-black transition-all duration-300"
               key={item.id}
