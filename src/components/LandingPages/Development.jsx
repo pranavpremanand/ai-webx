@@ -10,7 +10,7 @@ const Development = () => {
       <div className="blurred-green left-[-10%] top-[-10%]"></div>
       <div className="blurred-purple right-[-10%] bottom-[-10%]"></div>
       <div className="wrapper py-10 flex flex-col items-center gap-5 z-10">
-        <div className="flex items-center gap-3">
+        <div data-aos="fade-right" className="flex items-center gap-3">
           <img src={line} alt="line" className="w-[3rem]" />
           <h6 className="font-medium text-primary">
             {pathname === "/web-development" && "Web Development"}
@@ -19,11 +19,12 @@ const Development = () => {
         </div>
         <div className="grid md:grid-cols-[50%_40%] items-center gap-10">
           <img
+            data-aos="fade-right"
             src={developmentImg}
             alt="development"
             className="md:h-[70vh] object-contain"
           />
-          <div className="flex flex-col gap-4">
+          <div data-aos="fade-left" className="flex flex-col gap-4">
             <h2 className="text-[2rem] md:text-4xl leading-tight font-semibold">
               {/* We provide the Best IT solution services */}
               AI WebX – Crafting Exceptional Digital Experiences

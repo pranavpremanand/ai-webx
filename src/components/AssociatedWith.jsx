@@ -53,10 +53,16 @@ const AssociatedWith = () => {
     <div className="pt-[2rem] w-full flex flex-col items-center relative">
       <div className="blurred-green left-[-10%] bottom-[-10%] -z-10"></div>
       <div className="blurred-purple right-[-10%] bottom-[-10%] -z-10"></div>
-      <h2 className="text-[2rem] md:text-4xl font-semibold wrapper">
+      <h2
+        data-aos="fade-up"
+        className="text-[2rem] md:text-4xl font-semibold wrapper"
+      >
         Associated With
       </h2>
-      <div ref={sliderRef} className="keen-slider mt-[3rem] bg-primary/20">
+      <div
+        ref={sliderRef}
+        className="keen-slider mt-[3rem] bg-primary/20"
+      >
         {logos.map((img, index) => (
           <div key={index} className="keen-slider__slide flex justify-center">
             <img

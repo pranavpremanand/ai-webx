@@ -9,32 +9,41 @@ import { useLocation } from "react-router-dom";
 const Services = () => {
   const { pathname } = useLocation();
   return (
-    <div id="services" className="w-screen min-h-[70vh] flex justify-center relative">
+    <div
+      id="services"
+      className="w-screen min-h-[70vh] flex justify-center relative"
+    >
       <div className="blurred-green right-[-10%] bottom-[-10%]"></div>
       <div className="blurred-purple left-[-10%] top-[-10%]"></div>
       <div className="wrapper py-10 flex flex-col items-center gap-5 z-10">
-        <div className="flex items-center gap-3">
+        <div data-aos="fade-up" className="flex items-center gap-3">
           <img src={line} alt="line" className="w-[3rem]" />
           <h6 className="font-medium text-primary">
             {/* Popular Services */}
             {pathname === "/web-development" && "Web Development Services"}
             {pathname === "/app-development" && "App Development Services"}
-            </h6>
+          </h6>
         </div>
-        <h1 className="text-[2rem] md:text-4xl leading-tight font-semibold text-center max-w-2xl">
+        <h1
+          data-aos="fade-up"
+          className="text-[2rem] md:text-4xl leading-tight font-semibold text-center max-w-2xl"
+        >
           {/* We provide the Best IT solution services */}
           {pathname === "/web-development" &&
             "High-Quality Web Development to Transform Your Online Identity"}
           {pathname === "/app-development" &&
             "Cutting-Edge App Development Services for Powerful Mobile Solutions"}
         </h1>
-        <p className="text-center max-w-2xl">
+        <p data-aos="fade-up" className="text-center max-w-2xl">
           {pathname === "/web-development" &&
             "High-performance web development services designed to create secure, scalable, and user-friendly websites that enhance your business's digital presence."}
-          {pathname ===
-            "/app-development'&&'High-performance app development services designed to deliver secure, scalable, and user-friendly applications that elevate your business's digital reach and engage your audience."}
+          {pathname === "/app-development" &&
+            "High-performance app development services designed to deliver secure, scalable, and user-friendly applications that elevate your business's digital reach and engage your audience."}
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-10 mx-auto max-w-6xl">
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-10 mx-auto max-w-6xl"
+        >
           {pathname === "/web-development" &&
             webDevelopmentServices.map((item) => (
               <div className="flex flex-col gap-2 items-start bg-[#F6F6F6] hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-tr from-secondary/30 to-primary/30 border-2 border-black/40 p-5">

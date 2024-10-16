@@ -1,5 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import WebDevelopmentLandingPage from "./pages/WebDevelopmentLandingPage/WebDevelopmentLandingPage";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  once: true,
+  duration: 500,
+  offset: -50,
+});
 
 function App() {
   return (

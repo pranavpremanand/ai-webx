@@ -117,7 +117,7 @@ export const appDevelopmentServices = [
 ];
 
 // development workflow
-export const developmentWorkflow = [
+export const webDevelopmentWorkflow = [
   {
     id: "01",
     title: "Requirements Analysis",
@@ -152,6 +152,43 @@ export const developmentWorkflow = [
     icon: process5,
     description:
       "Our commitment extends beyond launch. We provide ongoing maintenance, security updates, and expert assistance to keep your website thriving in the ever-evolving digital landscape.",
+  },
+];
+export const appDevelopmentWorkflow = [
+  {
+    id: "01",
+    title: "Requirements Analysis",
+    icon: process1,
+    description:
+      "We delve deep to understand your app's purpose, target audience, and desired functionalities. Through workshops and discussions, we'll solidify your app's foundation.",
+  },
+  {
+    id: "02",
+    title: "Design & Planning",
+    icon: process2,
+    description:
+      "We craft a user-centric experience. Our designers create intuitive interfaces, while our planners map out the development roadmap, ensuring a smooth and efficient build.",
+  },
+  {
+    id: "03",
+    title: "Development",
+    icon: process3,
+    description:
+      "Our skilled engineers bring your app to life. Using cutting-edge tools and following best practices, we meticulously code every feature, ensuring a robust and functional app.",
+  },
+  {
+    id: "04",
+    title: "Testing",
+    icon: process4,
+    description:
+      "We rigorously test every aspect of your app across different devices and scenarios. Our goal To identify and fix any glitches before launch, guaranteeing a seamless user experience.",
+  },
+  {
+    id: "05",
+    title: "Support",
+    icon: process5,
+    description:
+      "Your app's success is our priority. We offer ongoing support to address any issues and provide updates to keep your app functioning at its best.",
   },
 ];
 

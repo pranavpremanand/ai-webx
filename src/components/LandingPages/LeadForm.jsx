@@ -5,7 +5,7 @@ const LeadForm = () => {
   return (
     <div id="contact" className="w-full py-[5rem] relative">
       <div className="blurred-green right-[-10%] top-[-30%] -z-10"></div>
-      <div className="wrapper grid md:grid-cols-2 items-center gap-10">
+      <div data-aos="fade-up" className="wrapper grid md:grid-cols-2 items-center gap-10">
         <div className="">
           <h2 className="text-[2rem] md:text-4xl font-semibold mb-3">
             Get in touch with us

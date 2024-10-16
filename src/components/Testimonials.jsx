@@ -28,7 +28,10 @@ const Testimonials = () => {
       style={{ backgroundImage: `url(${testiImg})` }}
     >
       <div className="wrapper grid lg:grid-cols-2 gap-10 w-full">
-        <div className="flex flex-col items-center lg:items-start w-full">
+        <div
+          data-aos="fade-right"
+          className="flex flex-col items-center lg:items-start w-full"
+        >
           <div className="flex items-center gap-3 mb-5">
             <img src={line} alt="line" className="w-[3rem]" />
             <h6 className="font-medium text-primary">Testimonials</h6>
@@ -42,7 +45,10 @@ const Testimonials = () => {
           </p>
           <img src={users} alt="users" className="w-[8rem] object-contain" />
         </div>
-        <div className="relative min-h-[20rem] sm:min-h-[17rem] w-full sm:w-4/5 lg:w-full mx-auto mt-[4rem] sm:mt-0">
+        <div
+          data-aos="fade-left"
+          className="relative min-h-[20rem] sm:min-h-[17rem] w-full sm:w-4/5 lg:w-full mx-auto mt-[4rem] sm:mt-0"
+        >
           {testimonials.map((item) => (
             <div
               key={item.id}

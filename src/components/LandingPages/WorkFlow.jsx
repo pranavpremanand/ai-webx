@@ -1,12 +1,17 @@
 import React from "react";
 import line from "../../assets/images/line.png";
-import { developmentWorkflow } from "../../constants";
+import {
+  webDevelopmentWorkflow,
+  appDevelopmentWorkflow,
+} from "../../constants";
+import { useLocation } from "react-router-dom";
 
 const WorkFlow = () => {
+  const { pathname } = useLocation();
   return (
     <div className="min-h-screen flex justify-center relative">
       <div className="blurred-purple left-[-10%] bottom-[-10%]"></div>
-      <div className="wrapper flex flex-col items-center gap-5 z-10 py-10">
+      <div data-aos="fade-up" className="wrapper flex flex-col items-center gap-5 z-10 py-10">
         <div className="flex items-center gap-3">
           <img src={line} alt="line" className="w-[3rem]" />
           <h6 className="font-medium text-primary">
@@ -14,20 +19,36 @@ const WorkFlow = () => {
           </h6>
         </div>
         <div className="z-10 grid grid-cols-1 mt-4 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10 mx-auto max-w-6xl">
-          {developmentWorkflow.map((item) => (
-            <div className="relative flex flex-col gap-2 items-start bg-primary/5 hover:bg-primary/10 rounded-lg p-5 hover:scale-105 transition-all duration-300">
-              <div className="absolute -z-0 flex justify-center items-center h-[7rem] w-[7rem] md:h-[9rem] md:w-[9rem] rounded-full bg-primary/20 bottom-1 right-1">
-                <span className="text-7xl md:text-8xl text-white font-extrabold">
-                  {item.id}
-                </span>
+          {pathname === "/web-development" &&
+            webDevelopmentWorkflow.map((item) => (
+              <div className="relative flex flex-col gap-2 items-start bg-primary/5 hover:bg-primary/10 rounded-lg p-5 hover:scale-105 transition-all duration-300">
+                <div className="absolute -z-0 flex justify-center items-center h-[7rem] w-[7rem] md:h-[9rem] md:w-[9rem] rounded-full bg-primary/20 bottom-1 right-1">
+                  <span className="text-7xl md:text-8xl text-white font-extrabold">
+                    {item.id}
+                  </span>
+                </div>
+                <div className="z-10 w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
+                  <img src={item.icon} alt="icon" className="w-[3rem]" />
+                </div>
+                <h6 className="z-10 font-medium text-xl">{item.title}</h6>
+                <p className="z-10 text-gray-700 text-sm">{item.description}</p>
               </div>
-              <div className="z-10 w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
-                <img src={item.icon} alt="icon" className="w-[3rem]" />
+            ))}
+          {pathname === "/app-development" &&
+            appDevelopmentWorkflow.map((item) => (
+              <div className="relative flex flex-col gap-2 items-start bg-primary/5 hover:bg-primary/10 rounded-lg p-5 hover:scale-105 transition-all duration-300">
+                <div className="absolute -z-0 flex justify-center items-center h-[7rem] w-[7rem] md:h-[9rem] md:w-[9rem] rounded-full bg-primary/20 bottom-1 right-1">
+                  <span className="text-7xl md:text-8xl text-white font-extrabold">
+                    {item.id}
+                  </span>
+                </div>
+                <div className="z-10 w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
+                  <img src={item.icon} alt="icon" className="w-[3rem]" />
+                </div>
+                <h6 className="z-10 font-medium text-xl">{item.title}</h6>
+                <p className="z-10 text-gray-700 text-sm">{item.description}</p>
               </div>
-              <h6 className="z-10 font-medium text-xl">{item.title}</h6>
-              <p className="z-10 text-gray-700 text-sm">{item.description}</p>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
     </div>
