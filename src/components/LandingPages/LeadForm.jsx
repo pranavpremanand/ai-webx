@@ -22,6 +22,7 @@ const LeadForm = () => {
               <input
                 type="text"
                 className="border-2 outline-none border-primary rounded-sm p-2"
+                placeholder="Full Name"
               />
             </div>
             <div className="flex flex-col">
@@ -31,6 +32,7 @@ const LeadForm = () => {
               <input
                 type="email"
                 className="border-2 outline-none border-primary rounded-sm p-2"
+                placeholder="Email Address"
               />
             </div>
             <div className="flex flex-col">
@@ -40,6 +42,7 @@ const LeadForm = () => {
               <input
                 type="text"
                 className="border-2 outline-none border-primary rounded-sm p-2"
+                placeholder="Enter Subject"
               />
             </div>
             <div className="flex flex-col">
@@ -49,6 +52,7 @@ const LeadForm = () => {
               <textarea
                 type="text"
                 className="border-2 outline-none border-primary rounded-sm p-2"
+                placeholder="Enter Message"
                 rows="4"
               />
             </div>

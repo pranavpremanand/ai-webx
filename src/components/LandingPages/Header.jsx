@@ -10,7 +10,7 @@ import { IoMdClose } from "react-icons/io";
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className="sticky top-0 z-50 w-full bg-white/30 backdrop-blur-sm text-black">
+    <div className="fixed top-0 z-50 w-full bg-white/30 backdrop-blur-sm text-black">
       <div className="flex wrapper items-center gap-8 justify-between">
         <ReactScrollLink
           to="banner"
@@ -27,7 +27,7 @@ const Header = () => {
               spy={true}
               smooth={true}
               duration={1000}
-              offset={-70}
+              offset={-80}
               activeClass="active-item"
               className="text-sm cursor-pointer text-gray-700 hover:text-black transition-all duration-300"
               key={item.id}
@@ -56,7 +56,7 @@ const Header = () => {
         open={isOpen}
         onClose={() => setIsOpen(false)}
         direction="right"
-        className="z-10 p-2 bg-tertiary text-secondary"
+        className="z-10 p-2"
       >
         <div className="mb-6 flex items-center justify-between pr-[.7rem] py-[.4rem]">
           <img src={logo} alt="logo" className="h-[2.5rem] object-contain" />
@@ -69,7 +69,7 @@ const Header = () => {
         </div>
         <div className="py-4 px-7 flex flex-col gap-4">
           {landingPageNavItems.map(({ label, link, id }) => (
-            <Link
+            <ReactScrollLink
               onClick={() => setIsOpen(false)}
               key={id}
               className="text-2xl font-mediumduration-300 link"
@@ -80,7 +80,7 @@ const Header = () => {
               duration={1000}
             >
               {label}
-            </Link>
+            </ReactScrollLink>
           ))}
         </div>
       </Drawer>

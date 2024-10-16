@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="w-screen min-h-[70vh] flex justify-center relative"
+      className="w-screen min-h-[70vh] flex justify-center relative pt-[3rem]"
     >
       <div className="blurred-green right-[-10%] bottom-[-10%]"></div>
       <div className="blurred-purple left-[-10%] top-[-10%]"></div>

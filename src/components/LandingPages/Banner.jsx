@@ -9,7 +9,7 @@ const Banner = () => {
   return (
     <div
       id="banner"
-      className="min-h-screen w-full relative -mt-[6.5rem] flex justify-center bg-cover bg-center bg-no-repeat"
+      className="min-h-screen w-full relative flex justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
       <div className="wrapper pt-[10rem] pb-[5rem] flex flex-col-reverse lg:grid grid-cols-[60%_40%] items-center gap-10 lg:gap-5">
