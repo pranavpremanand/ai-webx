@@ -17,13 +17,14 @@ import aiImg from "../../assets/images/landingpages/ai.jpg";
 const WebDevelopmentLandingPage = () => {
   return (
     <div className="landing-bg">
-      <Link className="w-[4rem] z-10 hover:-translate-y-1 h-[4rem] cursor-pointer rounded-full border-4 border-white bg-[#25D366] hover:bg-[#0f0f0f] fixed bottom-10 right-10 flex items-center justify-center transition-all duration-300">
+      <Link className="w-[4rem] z-30 hover:-translate-y-1 h-[4rem] cursor-pointer rounded-full border-4 border-white bg-[#25D366] hover:bg-[#0f0f0f] fixed bottom-7 right-7 flex items-center justify-center transition-all duration-300">
         <FaWhatsapp className="text-white text-4xl" />
       </Link>
       <Header />
       <Banner />
       <Services />
-      <div className="wrapper py-[5rem] flex flex-col gap-3">
+      <Development />
+      <div className="wrapper py-[2rem] flex flex-col gap-3">
         <div className="flex flex-col gap-3">
           <h2
             data-aos="fade-up"
@@ -102,8 +103,6 @@ const WebDevelopmentLandingPage = () => {
           </li>
         </ul>
       </div>
-
-      <Development />
       <div className="wrapper py-[2rem] flex flex-col gap-3">
         <div className="flex flex-col gap-3">
           <h2
