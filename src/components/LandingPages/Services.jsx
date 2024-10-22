@@ -13,11 +13,10 @@ const Services = () => {
       id="services"
       className="w-screen min-h-[70vh] flex justify-center relative pt-[3rem]"
     >
-      <div className="blurred-green right-[-10%] bottom-[-10%]"></div>
-      <div className="blurred-purple left-[-10%] top-[-10%]"></div>
+      <div className="blurred-blue left-[-10%] top-[-10%]"></div>
       <div className="wrapper py-10 flex flex-col items-center gap-5 z-10">
         <div data-aos="fade-up" className="flex items-center gap-3">
-          <img src={line} alt="line" className="w-[3rem]" />
+          <img src={line} alt="line" className="w-[3rem] grayscale" />
           <h6 className="font-medium text-primary">
             {/* Popular Services */}
             {pathname === "/web-development" && "Web Development Services"}
@@ -46,9 +45,9 @@ const Services = () => {
         >
           {pathname === "/web-development" &&
             webDevelopmentServices.map((item) => (
-              <div className="flex flex-col gap-2 items-start bg-[#F6F6F6] hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-tr from-secondary/30 to-primary/30 border-2 border-black/40 p-5">
+              <div className="flex flex-col gap-2 items-start bg-[#F6F6F6] hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-tr from-white to-primary/10 rounded-lg border border-black p-5">
                 <div className="w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
-                  <img src={item.icon} alt="icon" className="w-[3rem]" />
+                  <img src={item.icon} alt="icon" className="w-[3rem] grayscale" />
                 </div>
                 <h6 className="font-medium text-lg">{item.title}</h6>
                 <p className="text-gray-700 text-sm">{item.description}</p>

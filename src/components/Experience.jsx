@@ -8,15 +8,14 @@ import awardsImg from "../assets/images/icons/awards.png";
 const Experience = () => {
   return (
     <div className="w-full grid lg:grid-cols-[60%_35%] items-end relative">
-      <div className="blurred-green right-[-10%] bottom-[-10%]"></div>
       <img
         src={expImg}
         alt="experience"
-        className="w-full h-[70vh] lg:block hidden object-cover z-10"
+        className="w-full h-[70vh] lg:block hidden object-cover z-10 grayscale-[20%]"
       />
       <div data-aos="fade-left" className="px-6 flex flex-col lg:pl-5 w-full z-10">
         <div className="flex items-center gap-3 mb-5">
-          <img src={line} alt="line" className="w-[3rem]" />
+          <img src={line} alt="line" className="w-[3rem] grayscale" />
           <h6 className="font-medium text-primary">Work Experience</h6>
         </div>
         <h2 className="text-[2rem] md:text-4xl capitalize font-semibold mb-5">

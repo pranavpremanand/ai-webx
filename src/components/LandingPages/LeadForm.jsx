@@ -1,10 +1,9 @@
 import React from "react";
-import img from "../../assets/images/contact.png";
+import img from "../../assets/images/contact.jpg";
 
 const LeadForm = () => {
   return (
     <div id="contact" className="w-full py-[5rem] relative">
-      <div className="blurred-green right-[-10%] top-[-30%] -z-10"></div>
       <div data-aos="fade-up" className="wrapper grid md:grid-cols-2 items-center gap-10">
         <div className="">
           <h2 className="text-[2rem] md:text-4xl font-semibold mb-3">
@@ -61,8 +60,8 @@ const LeadForm = () => {
             </button>
           </form>
         </div>
-        <div className="hidden md:block">
-          <img src={img} alt="contact-us" className="h-[50vh] object-contain" />
+        <div className="hidden md:block h-full">
+          <img src={img} alt="contact-us" className="h-full rounded-lg object-cover object-center w-full" />
         </div>
       </div>
     </div>

@@ -51,8 +51,7 @@ const AssociatedWith = () => {
   });
   return (
     <div className="pt-[2rem] w-full flex flex-col items-center relative">
-      <div className="blurred-green left-[-10%] bottom-[-10%] -z-10"></div>
-      <div className="blurred-purple right-[-10%] bottom-[-10%] -z-10"></div>
+      <div className="blurred-blue right-[-10%] bottom-[-10%] -z-10"></div>
       <h2
         data-aos="fade-up"
         className="text-[2rem] md:text-4xl font-semibold wrapper"

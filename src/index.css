@@ -21,27 +21,38 @@ html{
   overflow-x: hidden;
 }
 
-:root {
-  background: #ffffff;
-}
-
 @layer utilities {
   .wrapper {
     @apply max-w-7xl mx-auto px-4 sm:px-6;
   }
   .primary-btn {
-    @apply bg-gradient-to-r rounded-full px-5 text-sm font-medium py-3 from-[#005DE0] to-[#CF00FE] text-white hover:-translate-y-1 hover:shadow-xl hover:to-[#005DE0] hover:from-[#CF00FE] cursor-pointer transition-all duration-300;
+    @apply bg-gradient-to-r rounded-full px-5 text-sm font-medium py-3 from-[#0f0f0f] to-[#515151] text-white hover:-translate-y-1 hover:shadow-xl hover:bg-gradient-to-r hover:from-black hover:to-black cursor-pointer transition-all duration-300;
   }
   .link {
     @apply cursor-pointer;
   }
-  .blurred-green{
-    @apply bg-[#cef9f1] h-[30rem] w-[30rem] rounded-full blur-3xl absolute;
-  }
-  .blurred-purple{
-    @apply bg-[#ebe4fc] h-[30rem] w-[30rem] rounded-full blur-3xl absolute;
-  }
+  /* .blurred-blue{
+    @apply bg-[#5080a159] h-[30rem] w-[30rem] rounded-full blur-3xl absolute;
+  } */
   .active-item{
-    @apply text-[#CF00FE];
+    @apply text-[#0f0f0f];
   }
+}
+
+
+.landing-bg::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url("../public/background-1.jpg");
+  background-size: cover;
+  background-position: right;
+  z-index: -1;
+  opacity: 0.3;
+  pointer-events: none;
+  animation: moveBackground 100s linear infinite;
 }

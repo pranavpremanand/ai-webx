@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/logo/logo.svg";
+import logo from "../../assets/images/logo/logo1.png";
 import { landingPageNavItems } from "../../constants";
 import { Link as ReactScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";

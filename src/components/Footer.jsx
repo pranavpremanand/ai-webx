@@ -1,6 +1,6 @@
 import React from "react";
 import bg from "../assets/images/footer-bg.png";
-import logo from "../assets/images/logo/logo.svg";
+import logo from "../assets/images/logo/logo1.png";
 import emailIcon from "../assets/images/icons/email.png";
 import phoneIcon from "../assets/images/icons/phone.png";
 import locationIcon from "../assets/images/icons/location.png";
@@ -9,7 +9,7 @@ import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <div className="py-[5rem] bg-cover bg-top" style={{ backgroundImage: `url(${bg})` }}>
+    <div className="py-[2rem] bg-cover bg-top" style={{ backgroundImage: `url(${bg})` }}>
       <div className="wrapper grid grid-cols-1 md:grid-cols-4 lg:grid-cols-[15%_45%_40%] gap-8">
         <div className="w-fit md:col-span-4 lg:col-span-1 md:place-self-center lg:place-self-auto">
           <img src={logo} alt="logo" className="w-[10rem] object-contain" />
@@ -43,7 +43,7 @@ const Footer = () => {
                 <img
                   src={emailIcon}
                   alt="email"
-                  className="w-[1.5rem] object-contain"
+                  className="w-[1.5rem] object-contain grayscale"
                 />
                 <a href="mailto:XXXXXXXXX">
                   <strong>Email:</strong> XXXXXXXXX
@@ -53,7 +53,7 @@ const Footer = () => {
                 <img
                   src={phoneIcon}
                   alt="phone"
-                  className="w-[1.5rem] object-contain"
+                  className="w-[1.5rem] object-contain grayscale"
                 />
                 <a href="tel:+916301350318">
                   <strong>Phone:</strong> +91 6301350318
@@ -63,7 +63,7 @@ const Footer = () => {
                 <img
                   src={locationIcon}
                   alt="location"
-                  className="w-[1.5rem] object-contain"
+                  className="w-[1.5rem] object-contain grayscale" 
                 />
                 <span className="max-w-xs text-wrap">
                   <strong>Location:</strong> Ammananbole, Narketpally <br /> 508254,
