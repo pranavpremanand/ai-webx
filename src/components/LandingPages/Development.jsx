@@ -12,8 +12,8 @@ const Development = () => {
         <div data-aos="fade-right" className="flex items-center gap-3">
           <img src={line} alt="line" className="w-[3rem] grayscale" />
           <h6 className="font-medium text-primary">
-            {pathname === "/web-development" && "Web Development"}
-            {pathname === "/app-development" && "App Development"}
+            {pathname.includes("/web-development") && "Web Development"}
+            {pathname.includes("/app-development") && "App Development"}
           </h6>
         </div>
         <div className="grid md:grid-cols-[50%_40%] items-center gap-10 mt-4">
@@ -29,9 +29,9 @@ const Development = () => {
               AI WebX – Crafting Exceptional Digital Experiences
             </h2>
             <p className="">
-              {pathname === "/web-development" &&
+              {pathname.includes("/web-development") &&
                 "Our web development services bring your ideas to life with custom-built websites designed to engage users and drive results. From sleek design to seamless functionality, we create digital experiences that captivate and convert, helping your business stand out online."}
-              {pathname === "/app-development" &&
+              {pathname.includes("/app-development") &&
                 "Craft innovative mobile apps tailored to your business needs, with designs that captivate users and deliver results. Our apps are meticulously developed to ensure high quality, seamless functionality, and exceptional user experiences across all platforms."}
               {/* Unlock the full potential of your online presence with our
               state-of-the-art web development services. At AI WebX, we combine

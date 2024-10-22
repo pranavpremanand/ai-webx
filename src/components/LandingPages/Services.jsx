@@ -19,8 +19,8 @@ const Services = () => {
           <img src={line} alt="line" className="w-[3rem] grayscale" />
           <h6 className="font-medium text-primary">
             {/* Popular Services */}
-            {pathname === "/web-development" && "Web Development Services"}
-            {pathname === "/app-development" && "App Development Services"}
+            {pathname.includes("/web-development") && "Web Development Services"}
+            {pathname.includes("/app-development") && "App Development Services"}
           </h6>
         </div>
         <h1
@@ -28,22 +28,22 @@ const Services = () => {
           className="text-[2rem] md:text-4xl leading-tight font-semibold text-center max-w-2xl"
         >
           {/* We provide the Best IT solution services */}
-          {pathname === "/web-development" &&
+          {pathname.includes("/web-development") &&
             "High-Quality Web Development to Transform Your Online Identity"}
-          {pathname === "/app-development" &&
+          {pathname.includes("/app-development") &&
             "Cutting-Edge App Development Services for Powerful Mobile Solutions"}
         </h1>
         <p data-aos="fade-up" className="text-center max-w-2xl">
-          {pathname === "/web-development" &&
+          {pathname.includes("/web-development") &&
             "High-performance web development services designed to create secure, scalable, and user-friendly websites that enhance your business's digital presence."}
-          {pathname === "/app-development" &&
+          {pathname.includes("/app-development") &&
             "High-performance app development services designed to deliver secure, scalable, and user-friendly applications that elevate your business's digital reach and engage your audience."}
         </p>
         <div
           data-aos="fade-up"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-10 mx-auto max-w-6xl"
         >
-          {pathname === "/web-development" &&
+          {pathname.includes("/web-development") &&
             webDevelopmentServices.map((item) => (
               <div className="flex flex-col gap-2 items-start bg-[#F6F6F6] hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-tr from-white to-primary/10 rounded-lg border border-black p-5">
                 <div className="w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
@@ -54,7 +54,7 @@ const Services = () => {
               </div>
             ))}
 
-          {pathname === "/app-development" &&
+          {pathname.includes("/app-development") &&
             appDevelopmentServices.map((item) => (
               <div className="flex flex-col gap-2 items-start bg-[#F6F6F6] hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-tr from-white to-primary/10 rounded-lg border border-black p-5">
                 <div className="w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">

@@ -12,11 +12,9 @@ AOS.init({
 function App() {
   return (
     <Routes>
-      <Route path="/web-development" element={<WebDevelopmentLandingPage />} />
-      <Route path="/app-development" element={<WebDevelopmentLandingPage />} />
-      {/* {["/web-development", "/app-development"].map((path) => (
+      {["/web-development", "/app-development"].map((path) => (
         <Route key={path} path={path} element={<WebDevelopmentLandingPage />} />
-      ))} */}
+      ))}
     </Routes>
   );
 }

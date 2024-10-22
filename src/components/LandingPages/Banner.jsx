@@ -34,22 +34,22 @@ const Banner = () => {
             data-aos="fade-right"
             className="bg-[#ECECF2] p-1 text-gray-500 text-sm"
           >
-            {pathname === "/web-development" && "Web Development"}
-            {pathname === "/app-development" && "App Development"}
+            {pathname.includes("/web-development") && "Web Development"}
+            {pathname.includes("/app-development") && "App Development"}
           </p>
           <h1
             data-aos="fade-right"
             className="text-[2.5rem] md:text-5xl font-bold leading-tight"
           >
-            {pathname === "/web-development" &&
+            {pathname.includes("/web-development") &&
               "AI WebX - Shaping the Future with Advanced AI Solutions"}
-            {pathname === "/app-development" &&
+            {pathname.includes("/app-development") &&
               "AI WebX - Elevating Your Business with Cutting-Edge App Development"}
           </h1>
           <p data-aos="fade-right" className="text-sm text-gray-500">
-            {pathname === "/web-development" &&
+            {pathname.includes("/web-development") &&
               "Unlock the full potential of your online presence with our state-of-the-art web development services. At AI WebX, we combine creativity, innovation, and the latest technologies to build custom web solutions that captivate users, boost engagement, and drive business growth. Whether you need a dynamic website, an interactive platform, or a robust e-commerce solution, we deliver tailored digital experiences designed for the future."}
-            {pathname === "/app-development" &&
+            {pathname.includes("/app-development") &&
               "Harness the power of innovative app development to reach your audience anytime, anywhere. At AI WebX, we specialize in crafting custom mobile and web applications that deliver seamless user experiences, boost engagement, and drive growth. From intuitive interfaces to robust functionalities, our tailored app solutions are designed to help your business thrive in the digital age, empowering you to stay ahead of the competition."}
           </p>
           <Link data-aos="fade-right" className="primary-btn mt-10">
