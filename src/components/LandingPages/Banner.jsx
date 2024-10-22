@@ -62,7 +62,7 @@ const Banner = () => {
             src={robot}
             loading="lazy"
             alt="robot"
-            className="h-[40vh] w-full object-contain"
+            className="h-[30vh] lg:h-[40vh] w-full object-contain"
           />
           {/* <ReactPlayer
             url={vid}
