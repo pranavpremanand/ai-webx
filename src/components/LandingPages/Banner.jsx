@@ -24,6 +24,7 @@ const Banner = () => {
   return (
     <div
       id="banner"
+      loading="lazy"
       className="min-h-screen w-full relative flex justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
@@ -59,6 +60,7 @@ const Banner = () => {
           <img
             id="robot"
             src={robot}
+            loading="lazy"
             alt="robot"
             className="h-[40vh] w-full object-contain"
           />

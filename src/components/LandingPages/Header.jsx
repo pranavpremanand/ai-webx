@@ -19,7 +19,7 @@ const Header = () => {
           smooth={true}
           duration={500}
         >
-          <img src={logo} alt="logo" className="h-[4.5rem] md:h-[6.5rem] object-contain" />
+          <img src={logo} loading="lazy" alt="logo" className="h-[4.5rem] md:h-[6.5rem] object-contain" />
         </ReactScrollLink>
         <div className="hidden md:flex items-center gap-10">
           {landingPageNavItems.map((item) => (
