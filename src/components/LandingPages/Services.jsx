@@ -58,7 +58,7 @@ const Services = () => {
             appDevelopmentServices.map((item) => (
               <div className="flex flex-col gap-2 items-start bg-[#F6F6F6] hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-tr from-secondary/30 to-primary/30 border-2 border-black/40 p-5">
                 <div className="w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
-                  <img src={item.icon} alt="icon" className="w-[3rem]" />
+                  <img src={item.icon} alt="icon" className="w-[3rem] grayscale" />
                 </div>
                 <h6 className="font-medium text-lg">{item.title}</h6>
                 <p className="text-gray-700 text-sm">{item.description}</p>

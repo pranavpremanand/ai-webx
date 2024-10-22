@@ -43,7 +43,7 @@ const WorkFlow = () => {
                   </span>
                 </div>
                 <div className="z-10 w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
-                  <img src={item.icon} alt="icon" className="w-[3rem]" />
+                  <img src={item.icon} alt="icon" className="w-[3rem] grayscale" />
                 </div>
                 <h6 className="z-10 font-medium text-xl">{item.title}</h6>
                 <p className="z-10 text-gray-700 text-sm">{item.description}</p>
