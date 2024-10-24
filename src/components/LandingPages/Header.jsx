@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo/logo1.png";
-import { landingPageNavItems } from "../../constants";
+import { landingPageNavLinks } from "../../constants";
 import { Link as ReactScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 import Drawer from "react-modern-drawer";
@@ -22,7 +22,7 @@ const Header = () => {
           <img src={logo} loading="lazy" alt="logo" className="h-[4.5rem] md:h-[6.5rem] object-contain" />
         </ReactScrollLink>
         <div className="hidden md:flex items-center gap-10">
-          {landingPageNavItems.map((item) => (
+          {landingPageNavLinks.map((item) => (
             <ReactScrollLink
               spy={true}
               smooth={true}
@@ -36,8 +36,6 @@ const Header = () => {
               {item.label}
             </ReactScrollLink>
           ))}
-          <Link className="primary-btn">Login</Link>
-          <Link className="text-sm">Register</Link>
         </div>
         <div
           className="block lg:hidden justify-self-end"
@@ -68,7 +66,7 @@ const Header = () => {
           </button>
         </div>
         <div className="py-4 px-7 flex flex-col gap-4">
-          {landingPageNavItems.map(({ label, link, id }) => (
+          {landingPageNavLinks.map(({ label, link, id }) => (
             <ReactScrollLink
               onClick={() => setIsOpen(false)}
               key={id}

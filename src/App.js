@@ -1,7 +1,9 @@
-import { Route, Routes } from "react-router-dom";
-import WebDevelopmentLandingPage from "./pages/WebDevelopmentLandingPage/WebDevelopmentLandingPage";
+import { Navigate, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage/LandingPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import NormalizeSlash from "./components/NormalizeSlash";
+import Home from "./pages/Website/Home";
 
 AOS.init({
   once: true,
@@ -11,11 +13,22 @@ AOS.init({
 
 function App() {
   return (
-    <Routes>
-      {["/web-development", "/app-development"].map((path) => (
-        <Route key={path} path={path} element={<WebDevelopmentLandingPage />} />
-      ))}
-    </Routes>
+    <NormalizeSlash>
+      <Routes>
+        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/" element={<Home />} />
+
+        {/* Landing Pages */}
+        <Route
+          path="/web-development"
+          element={<LandingPage page={"web-development"} />}
+        />
+        <Route
+          path="/app-development"
+          element={<LandingPage page={"app-development"} />}
+        />
+      </Routes>
+    </NormalizeSlash>
   );
 }
 

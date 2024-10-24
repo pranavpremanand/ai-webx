@@ -6,6 +6,7 @@ import phoneIcon from "../assets/images/icons/phone.png";
 import locationIcon from "../assets/images/icons/location.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { companyDetails } from "../constants";
 
 const Footer = () => {
   return (
@@ -45,8 +46,8 @@ const Footer = () => {
                   alt="email"
                   className="w-[1.5rem] object-contain grayscale"
                 />
-                <a href="mailto:XXXXXXXXX">
-                  <strong>Email:</strong> XXXXXXXXX
+                <a href={`mailto:${companyDetails.email}`}>
+                  <strong>Email:</strong> {companyDetails.email}
                 </a>
               </li>
               <li className="flex gap-2 items-center">
@@ -55,8 +56,8 @@ const Footer = () => {
                   alt="phone"
                   className="w-[1.5rem] object-contain grayscale"
                 />
-                <a href="tel:+916301350318">
-                  <strong>Phone:</strong> +91 6301350318
+                <a href={`tel:${companyDetails.phone}`}>
+                  <strong>Phone:</strong> {companyDetails.phone}
                 </a>
               </li>
               <li className="flex gap-2 items-start">
@@ -66,8 +67,7 @@ const Footer = () => {
                   className="w-[1.5rem] object-contain grayscale" 
                 />
                 <span className="max-w-xs text-wrap">
-                  <strong>Location:</strong> Ammananbole, Narketpally <br /> 508254,
-                  Nalgonda, Telangana
+                  <strong>Location:</strong> {companyDetails.location}
                 </span>
               </li>
             </ul>
