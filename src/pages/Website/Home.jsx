@@ -8,10 +8,10 @@ import WhatsAppIcon from "../../components/WhatsAppIcon";
 import Header from "../../components/Website/Header";
 import Banner from "../../components/Website/Banner";
 import line from "../../assets/images/line.png";
-import { industriesCompanyServe, services } from "../../constants";
-import { Link } from "react-router-dom";
-import { PiCaretDoubleRightBold } from "react-icons/pi";
+import { industriesCompanyServe, services } from "../../constant";
 import aboutImg from "../../assets/images/home-aboutus.jpg";
+import whoWeAre from "../../assets/images/who-we-are.jpg";
+import ServiceItemCard from "../../components/Website/ServiceItemCard";
 
 const Home = () => {
   return (
@@ -31,10 +31,7 @@ const Home = () => {
               our services
             </h6>
           </div>
-          <h1
-            data-aos="fade-up"
-            className="text-[2rem] md:text-4xl leading-tight font-semibold text-center max-w-2xl"
-          >
+          <h1 data-aos="fade-up" className="heading text-center">
             We provide the Best IT solution services
           </h1>
           <p data-aos="fade-up" className="text-center max-w-2xl">
@@ -47,35 +44,14 @@ const Home = () => {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-10 mx-auto max-w-6xl"
           >
             {services.map((item) => (
-              <div
-                className="h-full flex flex-col justify-between gap-5 bg-[#F6F6F6] hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-gradient-to-tr from-white to-primary/10 rounded-lg border border-black p-5"
-                key={item.id}
-              >
-                <div className="flex flex-col gap-2 items-start">
-                  <div className="w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
-                    <img
-                      src={item.icon}
-                      alt="icon"
-                      className="w-[3rem] grayscale"
-                    />
-                  </div>
-                  <h6 className="font-medium text-lg">{item.title}</h6>
-                  <p className="text-gray-700 text-sm">{item.description}</p>
-                </div>
-                <Link className="text-primary underline text-sm flex gap-5 items-center">
-                  Know More <PiCaretDoubleRightBold />
-                </Link>
-              </div>
+              <ServiceItemCard key={item.id} item={item} />
             ))}
           </div>
         </div>
       </div>
       <div className="wrapper py-[2rem] flex flex-col gap-3">
         <div className="flex flex-col gap-3">
-          <h2
-            data-aos="fade-up"
-            className="text-[2rem] md:text-4xl leading-tight font-semibold text-center"
-          >
+          <h2 data-aos="fade-up" className="heading text-center">
             Industries We Serve
           </h2>
           <p data-aos="fade-up" className="mt-2 text-center mb-3">
@@ -95,11 +71,11 @@ const Home = () => {
                 alt={item.title}
                 className="w-full h-full object-cover absolute top-0 left-0 rounded group-hover:scale-110 transition-all duration-300"
               />
-              <div className="w-full h-full absolute top-0 left-0 bg-white/70"></div>
-              <p className="text-center text-[1.3rem] font-medium relative z-10">
+              <div className="w-full h-full absolute top-0 left-0 bg-white/70 group-hover:bg-black/60 transition-all duration-300"></div>
+              <p className="text-center text-[1.3rem] font-medium relative z-10 group-hover:text-white transition-all duration-300">
                 {item.title}
               </p>
-              <p className="text-gray-800 text-md mt-2 relative z-10">
+              <p className="text-gray-800 text-md mt-2 relative z-10 group-hover:text-white transition-all duration-300">
                 {item.desc}
               </p>
             </div>
@@ -111,8 +87,13 @@ const Home = () => {
             <h6 className="font-medium text-primary">About Company</h6>
           </div>
           <div className="grid md:grid-cols-2 gap-10 md:mb-[7rem]">
-            <div className="relative">
-              <img src={aboutImg} alt="about company" className="rounded-lg h-[20rem] md:h-full md:max-h-[30rem] w-full object-cover object-right" />
+            <div className="relative" data-aos="fade-right">
+              <img
+                src={aboutImg}
+                loading="lazy"
+                alt="about company"
+                className="rounded-lg h-[20rem] md:h-full md:max-h-[25rem] w-full object-cover object-right"
+              />
               <div className="w-full sm:w-fit sm:max-w-[18rem] text-white h-full sm:h-fit absolute md:-bottom-[5rem] bottom-0 left-0 bg-primary/70 sm:bg-primary p-5 rounded-lg">
                 <h1 className="text-5xl font-bold">2+</h1>
                 <p className="font-medium mt-3">3 Years of Experience</p>
@@ -121,8 +102,8 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-5">
-              <h3 className="text-3xl font-medium">
+            <div data-aos="fade-right" className="flex flex-col gap-5">
+              <h3 className="heading-2">
                 Our Vision: Empowering Global Businesses with Intelligent
                 Technology
               </h3>
@@ -136,8 +117,48 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <div className="wrapper pt-10 flex flex-col items-center gap-5 z-10">
+          <div className="grid md:grid-cols-2 gap-10 md:mb-[7rem]">
+            <div data-aos="fade-right" className="flex flex-col gap-5">
+              <img src={line} alt="line" className="w-[3rem] grayscale" />
+              <h3 className="heading-2 capitalize">who We Are</h3>
+              <p>
+                AI WebX is a globally recognized leader in delivering
+                cutting-edge technology solutions. Our expertise spans AI,
+                Machine Learning, Blockchain, and Cloud Computing, offering
+                businesses the tools they need to stay competitive and
+                innovative in today’s digital economy. Serving industries
+                ranging from healthcare to e-commerce and energy, we work
+                closely with clients to transform challenges into opportunities.
+              </p>
+            </div>
+            <div data-aos="fade-left" className="">
+              <img
+                src={whoWeAre}
+                loading="lazy"
+                alt="about company"
+                className="rounded-lg h-[20rem] md:h-full md:max-h-[25rem] w-full object-cover object-right"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      {/* <WorkFlow /> */}
+      <div className="wrapper mb-10">
+        <div
+          data-aos="fade-right"
+          className="flex flex-col items-center text-center gap-5"
+        >
+          <div className="flex items-center gap-3">
+            <img src={line} alt="line" className="w-[3rem] grayscale" />
+            <h3 className="heading-2 capitalize">our mission</h3>
+          </div>
+          <p className="max-w-3xl">
+            We aim to empower businesses globally by providing scalable,
+            intelligent solutions that enable innovation, streamline operations,
+            and drive sustainable growth
+          </p>
+        </div>
+      </div>
       <Experience />
       <Testimonials />
       <LeadForm />

@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
-import { websitePagesLinks } from "../../constants";
+import { websitePagesLinks } from "../../constant";
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className="fixed top-0 z-50 w-full bg-white/30 backdrop-blur-sm text-black">
+    <div className="fixed top-0 z-50 w-full bg-white/50 backdrop-blur-sm text-black">
       <div className="flex wrapper items-center gap-8 justify-between">
         <Link
-          to="banner"
+          to="/"
           className="cursor-pointer"
           spy={true}
           smooth={true}
@@ -28,7 +28,7 @@ const Header = () => {
               duration={1000}
               offset={-70}
               activeClass="active-item"
-              className="text-sm cursor-pointer text-gray-700 hover:text-black transition-all duration-300"
+              className="text-sm cursor-pointer text-gray-800 hover:text-black transition-all duration-300"
               key={item.id}
               to={item.link}
             >

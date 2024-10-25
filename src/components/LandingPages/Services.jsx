@@ -3,7 +3,7 @@ import line from "../../assets/images/line.png";
 import {
   appDevelopmentServices,
   webDevelopmentServices,
-} from "../../constants";
+} from "../../constant";
 
 const Services = ({ page }) => {
   return (

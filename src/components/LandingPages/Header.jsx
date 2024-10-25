@@ -1,8 +1,7 @@
 import React from "react";
 import logo from "../../assets/images/logo/logo1.png";
-import { landingPageNavLinks } from "../../constants";
+import { landingPageNavLinks } from "../../constant";
 import { Link as ReactScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
@@ -10,7 +9,7 @@ import { IoMdClose } from "react-icons/io";
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <div className="fixed top-0 z-50 w-full bg-white/30 backdrop-blur-sm text-black">
+    <div className="fixed top-0 z-50 w-full bg-white/50 backdrop-blur-sm text-black">
       <div className="flex wrapper items-center gap-8 justify-between">
         <ReactScrollLink
           to="banner"
@@ -29,7 +28,7 @@ const Header = () => {
               duration={1000}
               offset={-70}
               activeClass="active-item"
-              className="text-sm cursor-pointer text-gray-700 hover:text-black transition-all duration-300"
+              className="text-sm cursor-pointer text-gray-800 hover:text-black transition-all duration-300"
               key={item.id}
               to={item.link}
             >

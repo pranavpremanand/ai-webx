@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
 }
 
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -34,13 +34,23 @@ html{
   /* .blurred-blue{
     @apply bg-[#5080a159] h-[30rem] w-[30rem] rounded-full blur-3xl absolute;
   } */
-  .active-item{
+  .active-item {
     @apply text-[#0f0f0f];
+  }
+  .heading {
+    @apply text-[2rem] md:text-4xl leading-tight font-semibold;
+  }
+  .heading-2 {
+    @apply text-[1.5rem] md:text-3xl font-medium leading-tight;
   }
 }
 
+p {
+  line-height: 1.7;
+  letter-spacing: 0.7px;
+}
 
-.landing-bg::before{
+.landing-bg::before {
   content: "";
   position: fixed;
   top: 0;

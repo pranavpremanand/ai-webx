@@ -6,11 +6,11 @@ import phoneIcon from "../assets/images/icons/phone.png";
 import locationIcon from "../assets/images/icons/location.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { companyDetails } from "../constants";
+import { companyDetails } from "../constant";
 
 const Footer = () => {
   return (
-    <div className="py-[2rem] bg-cover bg-top" style={{ backgroundImage: `url(${bg})` }}>
+    <div className="border-t-2 py-[2rem] bg-cover bg-top" style={{ backgroundImage: `url(${bg})` }}>
       <div className="wrapper grid grid-cols-1 md:grid-cols-4 lg:grid-cols-[15%_45%_40%] gap-8">
         <div className="w-fit md:col-span-4 lg:col-span-1 md:place-self-center lg:place-self-auto">
           <img src={logo} alt="logo" className="w-[10rem] object-contain" />

@@ -1,9 +1,6 @@
 import React from "react";
 import line from "../../assets/images/line.png";
-import {
-  webDevelopmentWorkflow,
-  appDevelopmentWorkflow,
-} from "../../constants";
+import { appDevelopmentWorkflow, webDevelopmentWorkflow } from "../../constant";
 
 const WorkFlow = ({page}) => {
   return (

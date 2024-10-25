@@ -10,6 +10,7 @@ const Experience = () => {
     <div className="w-full grid lg:grid-cols-[60%_35%] items-end relative">
       <img
         src={expImg}
+        loading="lazy"
         alt="experience"
         className="w-full h-[70vh] lg:block hidden object-cover z-10 grayscale-[20%]"
       />
@@ -23,6 +24,7 @@ const Experience = () => {
         </h2>
         <img
         src={expImg}
+        loading="lazy"
         alt="experience"
         className="w-full h-[50vh] block lg:hidden object-cover object-right z-10"
       />

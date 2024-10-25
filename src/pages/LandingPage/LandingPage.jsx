@@ -3,14 +3,14 @@ import Header from "../../components/LandingPages/Header";
 import Banner from "../../components/LandingPages/Banner";
 import Services from "../../components/LandingPages/Services";
 import Development from "../../components/LandingPages/Development";
-import WorkFlow from "../../components/LandingPages/WorkFlow";
 import Experience from "../../components/Experience";
 import Testimonials from "../../components/Testimonials";
 import AssociatedWith from "../../components/AssociatedWith";
 import Footer from "../../components/Footer";
 import LeadForm from "../../components/LandingPages/LeadForm";
 import WhatsAppIcon from "../../components/WhatsAppIcon";
-import { industriesCompanyServe } from "../../constants";
+import { industriesCompanyServe } from "../../constant";
+import WorkFlow from "../../components/LandingPages/WorkFlow";
 
 const LandingPage = ({ page }) => {
   return (
@@ -124,11 +124,11 @@ const LandingPage = ({ page }) => {
                 alt={item.title}
                 className="w-full h-full object-cover absolute top-0 left-0 rounded group-hover:scale-110 transition-all duration-300"
               />
-              <div className="w-full h-full absolute top-0 left-0 bg-white/70"></div>
-              <p className="text-center text-[1.3rem] font-medium relative z-10">
+              <div className="w-full h-full absolute top-0 left-0 bg-white/70 group-hover:bg-black/60 transition-all duration-300"></div>
+              <p className="text-center text-[1.3rem] font-medium relative z-10 group-hover:text-white transition-all duration-300">
                 {item.title}
               </p>
-              <p className="text-gray-800 text-md mt-2 relative z-10">
+              <p className="text-gray-800 text-md mt-2 relative z-10 group-hover:text-white transition-all duration-300">
                 {item.desc}
               </p>
             </div>
