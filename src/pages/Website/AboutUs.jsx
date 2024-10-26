@@ -74,7 +74,7 @@ const AboutUs = () => {
             <img src={line} alt="line" className="w-[3rem]" />
             <h6 className="font-medium text-secondary">Work Experience</h6>
           </div>
-          <h2 className="text-[2rem] md:text-4xl capitalize font-semibold mb-5">
+          <h2 className="text-[2rem] md:text-4xl capitalize text-center lg:text-start font-semibold mb-5">
             We specialize in custom -tailored
           </h2>
           <img

@@ -39,7 +39,7 @@ const Services = ({ page }) => {
         </p>
         <div
           data-aos="fade-up"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-10 mx-auto max-w-6xl"
+          className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-10 mx-auto max-w-6xl"
         >
           {page === "web-development" &&
             webDevelopmentServices.map((item) => (
@@ -55,7 +55,7 @@ const Services = ({ page }) => {
                   />
                 </div>
                 <h6 className="font-medium text-lg">{item.title}</h6>
-                <p className="text-gray-700 text-sm">{item.description}</p>
+                <p className="text-gray-700 text-md">{item.description}</p>
               </div>
             ))}
 

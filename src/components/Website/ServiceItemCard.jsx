@@ -19,13 +19,13 @@ const ServiceItemCard = ({ item }) => {
         <h6 className="font-medium text-lg group-hover:text-white">
           {item.title}
         </h6>
-        <p className="text-gray-700 group-hover:text-white text-sm">
+        <p className="text-gray-700 group-hover:text-white text-md">
           {item.description}
         </p>
       </div>
       <Link
         to={item.link}
-        className="text-primary group-hover:text-white transition-all duration-300 underline text-sm flex gap-5 items-center"
+        className="text-primary group-hover:text-white transition-all duration-300 underline text-md flex gap-5 items-center"
       >
         Know More <PiCaretDoubleRightBold />
       </Link>
