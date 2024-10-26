@@ -39,7 +39,7 @@ const MapComponent = () => {
       whenCreated={(mapInstance) => (mapRef.current = mapInstance)} // Save the map instance to ref
       scrollWheelZoom={false} // Disable zooming with the scroll wheel
       doubleClickZoom={false} // Disable zooming by double-clicking
-      dragging={false} // Disable dragging the map
+    //   dragging={false} // Disable dragging the map
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
