@@ -23,7 +23,7 @@ const Header = () => {
             src={logo}
             loading="lazy"
             alt="logo"
-            className="h-[4.5rem] md:h-[6.5rem] object-contain"
+            className="h-[5rem] md:h-[6.5rem] object-contain"
           />
         </Link>
         <div className="hidden md:flex items-center gap-10">
