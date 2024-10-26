@@ -48,7 +48,7 @@ const Banner = () => {
             avenues. Our mission is to empower businesses to thrive in a rapidly
             evolving digital landscape.
           </p>
-          <Link data-aos="fade-right" className="primary-btn mt-10">
+          <Link to="/contact" data-aos="fade-right" className="primary-btn mt-10">
             Get Started
           </Link>
         </div>

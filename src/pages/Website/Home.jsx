@@ -11,6 +11,7 @@ import { industriesCompanyServe, services } from "../../constant";
 import aboutImg from "../../assets/images/home-aboutus.jpg";
 import whoWeAre from "../../assets/images/who-we-are.jpg";
 import ServiceItemCard from "../../components/Website/ServiceItemCard";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -39,7 +40,7 @@ const Home = () => {
           </p>
           <div
             data-aos="fade-up"
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10 mx-auto max-w-6xl"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-10 mx-auto max-w-6xl"
           >
             {services.map((item) => (
               <ServiceItemCard key={item.id} item={item} />
@@ -111,7 +112,7 @@ const Home = () => {
                 adapt and excel in an increasingly complex and competitive
                 marketplace.
               </p>
-              <button className="primary-btn mt-7 w-fit">Know More</button>
+              <Link to='/about-us' className="primary-btn mt-7 w-fit">Know More</Link>
             </div>
           </div>
         </div>
