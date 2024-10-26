@@ -94,7 +94,7 @@ const Home = () => {
               />
               <div className="w-full sm:w-fit sm:max-w-[18rem] text-white h-full sm:h-fit absolute md:-bottom-[5rem] bottom-0 left-0 bg-primary/70 sm:bg-primary p-5 rounded-lg">
                 <h1 className="text-5xl font-bold text-white">2+</h1>
-                <p className="font-medium mt-3 text-white">3 Years of Experience</p>
+                <p className="font-medium mt-3 text-white">Years of Experience</p>
                 <p className="pl-5 border-l-2 border-white text-md mt-3 text-white">
                   The trusted choice for your software development solutions
                 </p>
