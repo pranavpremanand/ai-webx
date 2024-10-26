@@ -120,7 +120,7 @@ const AppDevelopment = () => {
           />
           <div className="flex flex-col gap-1">
             <h6 className="text-md font-semibold">{prev.title}</h6>
-            <p className="flex items-center gap-2 text-sm text-[#219BE4]">
+            <p className="flex items-center gap-2 text-sm text-secondary">
               <IoIosArrowRoundBack className="text-2xl" /> Previous
             </p>
           </div>
@@ -133,7 +133,7 @@ const AppDevelopment = () => {
           />
           <div className="flex flex-col gap-1">
             <h6 className="text-md font-semibold">{next.title}</h6>
-            <p className="flex items-center gap-2 text-sm text-[#219BE4]">
+            <p className="flex items-center gap-2 text-sm text-secondary">
               Next <IoIosArrowRoundForward className="text-2xl" />
             </p>
           </div>

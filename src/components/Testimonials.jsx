@@ -33,8 +33,8 @@ const Testimonials = () => {
           className="flex flex-col items-center lg:items-start w-full"
         >
           <div className="flex items-center gap-3 mb-5">
-            <img src={line} alt="line" className="w-[3rem] grayscale" />
-            <h6 className="font-medium text-primary">Testimonials</h6>
+            <img src={line} alt="line" className="w-[3rem]" />
+            <h6 className="font-medium text-secondary">Testimonials</h6>
           </div>
           <h2 className="text-[2rem] md:text-4xl capitalize font-semibold mb-5 text-center lg:text-start lg:max-w-[30rem]">
             Clients Feedback Examples You

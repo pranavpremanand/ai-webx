@@ -7,7 +7,7 @@ import Experience from "../../components/Experience";
 import Testimonials from "../../components/Testimonials";
 import AssociatedWith from "../../components/AssociatedWith";
 import Footer from "../../components/Footer";
-import LeadForm from "../../components/LandingPages/LeadForm";
+import LeadForm from "../../components/LeadForm";
 import WhatsAppIcon from "../../components/WhatsAppIcon";
 import { industriesCompanyServe } from "../../constant";
 import WorkFlow from "../../components/LandingPages/WorkFlow";

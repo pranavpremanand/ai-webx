@@ -48,22 +48,22 @@ export const services = [
       "Cutting-edge technology that creates innovative solutions for businesses and consumers alike.",
     link: "/services/vr-ar-development",
   },
-  {
-    id: 7,
-    title: "Chatbot Development",
-    icon: require("./assets/images/icons/chatbot.png"),
-    description:
-      "Enhance customer engagement with interactive, personalized, and 24/7 available support.",
-    link: "/services/chatbot-development",
-  },
-  {
-    id: 8,
-    title: "Cyber Security",
-    icon: require("./assets/images/icons/cybersecurity.png"),
-    description:
-      "Protect your business from cyber threats with our expert cybersecurity services. Fortify your digital assets efficiently. Get in touch with us today!",
-    link: "/services/cyber-security",
-  },
+  // {
+  //   id: 7,
+  //   title: "Chatbot Development",
+  //   icon: require("./assets/images/icons/chatbot.png"),
+  //   description:
+  //     "Enhance customer engagement with interactive, personalized, and 24/7 available support.",
+  //   link: "/services/chatbot-development",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Cyber Security",
+  //   icon: require("./assets/images/icons/cybersecurity.png"),
+  //   description:
+  //     "Protect your business from cyber threats with our expert cybersecurity services. Fortify your digital assets efficiently. Get in touch with us today!",
+  //   link: "/services/cyber-security",
+  // },
 ];
 
 // details

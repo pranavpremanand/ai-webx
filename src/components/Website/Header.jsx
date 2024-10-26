@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/images/logo/logo1.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import { IoMdClose } from "react-icons/io";
@@ -8,8 +8,9 @@ import { websitePagesLinks } from "../../constant";
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const { pathname } = useLocation();
   return (
-    <div className="fixed top-0 z-50 w-full bg-white/50 backdrop-blur-sm text-black">
+    <div className="fixed top-0 z-50 w-full bg-white/50 backdrop-blur-sm text-primary">
       <div className="flex wrapper items-center gap-8 justify-between">
         <Link
           to="/"
@@ -18,17 +19,19 @@ const Header = () => {
           smooth={true}
           duration={500}
         >
-          <img src={logo} loading="lazy" alt="logo" className="h-[4.5rem] md:h-[6.5rem] object-contain" />
+          <img
+            src={logo}
+            loading="lazy"
+            alt="logo"
+            className="h-[4.5rem] md:h-[6.5rem] object-contain"
+          />
         </Link>
         <div className="hidden md:flex items-center gap-10">
           {websitePagesLinks.map((item) => (
             <Link
-              spy={true}
-              smooth={true}
-              duration={1000}
-              offset={-70}
-              activeClass="active-item"
-              className="text-sm cursor-pointer text-gray-800 hover:text-black transition-all duration-300"
+              className={`${
+                pathname === item.link && "active-item"
+              } text-sm cursor-pointer text-gray-700 transition-all duration-300`}
               key={item.id}
               to={item.link}
             >
@@ -59,7 +62,7 @@ const Header = () => {
           <img src={logo} alt="logo" className="h-[2.5rem] object-contain" />
           <button
             onClick={() => setIsOpen(false)}
-            className="text-black text-[2.2rem]"
+            className="text-primary text-[2.2rem]"
           >
             <IoMdClose />
           </button>

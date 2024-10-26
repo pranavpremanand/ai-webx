@@ -16,8 +16,8 @@ const Experience = () => {
       />
       <div data-aos="fade-left" className="px-6 flex flex-col lg:pl-5 w-full z-10">
         <div className="flex items-center gap-3 mb-5">
-          <img src={line} alt="line" className="w-[3rem] grayscale" />
-          <h6 className="font-medium text-primary">Work Experience</h6>
+          <img src={line} alt="line" className="w-[3rem]" />
+          <h6 className="font-medium text-secondary">Work Experience</h6>
         </div>
         <h2 className="text-[2rem] md:text-4xl capitalize font-semibold mb-5">
           We specialize in custom -tailored

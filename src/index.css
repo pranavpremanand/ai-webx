@@ -10,6 +10,11 @@
   font-family: "Roboto Slab", serif;
 }
 
+:root {
+  background: #ffffff;
+  @apply text-primary;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -26,7 +31,7 @@ html {
     @apply max-w-7xl mx-auto px-4 sm:px-6;
   }
   .primary-btn {
-    @apply bg-gradient-to-r rounded-full px-5 text-sm font-medium py-3 from-[#0f0f0f] to-[#515151] text-white hover:-translate-y-1 hover:shadow-xl hover:bg-gradient-to-r hover:from-black hover:to-black cursor-pointer transition-all duration-300;
+    @apply bg-gradient-to-r rounded-full px-5 text-sm font-medium py-3 from-primary to-[#515151] text-white hover:-translate-y-1 hover:shadow-xl hover:bg-gradient-to-r hover:from-primary hover:to-primary cursor-pointer transition-all duration-300;
   }
   .link {
     @apply cursor-pointer;
@@ -35,7 +40,7 @@ html {
     @apply bg-[#5080a159] h-[30rem] w-[30rem] rounded-full blur-3xl absolute;
   } */
   .active-item {
-    @apply text-[#0f0f0f];
+    @apply text-primary font-semibold;
   }
   .heading {
     @apply text-[2rem] md:text-4xl leading-tight font-semibold;

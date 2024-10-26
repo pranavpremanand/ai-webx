@@ -115,7 +115,7 @@ const WebDevelopment = () => {
       </p>
       <hr />
       <div className="flex flex-col sm:flex-row w-full justify-end gap-6">
-        <Link to={next.link} className="flex items-center gap-3">
+        <Link to={next.link} className="flex items-center self-end gap-3">
           <img
             src={next.icon}
             alt=""
@@ -123,7 +123,7 @@ const WebDevelopment = () => {
           />
           <div className="flex flex-col gap-1">
             <h6 className="text-md font-semibold">{next.title}</h6>
-            <p className="flex items-center gap-2 text-sm text-[#219BE4]">
+            <p className="flex items-center gap-2 text-sm text-secondary">
               Next <IoIosArrowRoundForward className="text-2xl" />
             </p>
           </div>

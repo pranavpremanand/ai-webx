@@ -6,14 +6,14 @@ const ServiceItemCard = ({ item }) => {
   return (
     <Link
       to={item.link}
-      className="h-full flex flex-col justify-between gap-5 bg-[#F6F6F6] hover:shadow-2xl transition-all duration-300 hover:bg-[#19191a] group rounded-lg border border-black p-5"
+      className="h-full flex flex-col justify-between gap-5 bg-primary/15 hover:shadow-2xl transition-all duration-300 hover:bg-primary group rounded-lg border border-black p-5"
     >
       <div className="flex flex-col gap-2 items-start">
-        <div className="group-hover:scale-[120%] transition-all duration-300 w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 group-hover:bg-white flex items-center justify-center">
+        <div className="group-hover:scale-[120%] transition-all duration-300 w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
           <img
             src={item.icon}
             alt="icon"
-            className="group-hover:scale-[120%] transition-all duration-300 w-[3rem] grayscale"
+            className="group-hover:scale-[120%] transition-all duration-300 w-[3rem] grayscale group-hover:invert"
           />
         </div>
         <h6 className="font-medium text-lg group-hover:text-white">

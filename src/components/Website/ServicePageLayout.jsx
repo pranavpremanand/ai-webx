@@ -27,7 +27,7 @@ const ServicePageLayout = () => {
                   <Link
                     className={`${
                       item.link === pathname
-                        ? "bg-[#219BE4] text-white"
+                        ? "bg-secondary text-white"
                         : "bg-white text-primary"
                     } flex items-center gap-2 justify-between p-3 rounded-md`}
                     to={item.link}
@@ -51,7 +51,7 @@ const ServicePageLayout = () => {
               >
                 {companyDetails.phone}
               </Link>
-              <Link className="bg-[#219BE4] rounded-md w-full px-5 text-sm font-medium py-3 text-white hover:-translate-y-1 hover:shadow-xl hover:bg-white hover:text-[#219BE4] border border-[#219BE4] cursor-pointer transition-all duration-300">
+              <Link className="bg-secondary rounded-md w-full px-5 text-sm font-medium py-3 text-white hover:-translate-y-1 hover:shadow-xl hover:bg-white hover:text-secondary border border-secondary cursor-pointer transition-all duration-300">
                 Contact Now
               </Link>
             </div>
@@ -70,7 +70,7 @@ const ServicePageLayout = () => {
             <Link to={`tel:${companyDetails.phone}`} className="font-semibold">
               {companyDetails.phone}
             </Link>
-            <Link className="bg-[#219BE4] rounded-md w-full px-5 text-sm font-medium py-3 text-white hover:-translate-y-1 hover:shadow-xl hover:bg-white hover:text-[#219BE4] border border-[#219BE4] cursor-pointer transition-all duration-300">
+            <Link className="bg-secondary rounded-md w-full px-5 text-sm font-medium py-3 text-white hover:-translate-y-1 hover:shadow-xl hover:bg-white hover:text-secondary border border-secondary cursor-pointer transition-all duration-300">
               Contact Now
             </Link>
           </div>

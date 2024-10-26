@@ -3,8 +3,7 @@ import Experience from "../../components/Experience";
 import Testimonials from "../../components/Testimonials";
 import AssociatedWith from "../../components/AssociatedWith";
 import Footer from "../../components/Footer";
-import LeadForm from "../../components/LandingPages/LeadForm";
-import WhatsAppIcon from "../../components/WhatsAppIcon";
+import LeadForm from "../../components/LeadForm";
 import Header from "../../components/Website/Header";
 import Banner from "../../components/Website/Banner";
 import line from "../../assets/images/line.png";
@@ -16,7 +15,6 @@ import ServiceItemCard from "../../components/Website/ServiceItemCard";
 const Home = () => {
   return (
     <div className="landing-bg">
-      <WhatsAppIcon />
       <Header />
       <Banner />
       <div
@@ -26,8 +24,8 @@ const Home = () => {
         <div className="blurred-blue left-[-10%] top-[-10%]"></div>
         <div className="wrapper py-10 flex flex-col items-center gap-5 z-10">
           <div data-aos="fade-up" className="flex items-center gap-3">
-            <img src={line} alt="line" className="w-[3rem] grayscale" />
-            <h6 className="font-medium text-primary capitalize">
+            <img src={line} alt="line" className="w-[3rem]" />
+            <h6 className="font-medium text-secondary capitalize">
               our services
             </h6>
           </div>
@@ -41,7 +39,7 @@ const Home = () => {
           </p>
           <div
             data-aos="fade-up"
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-10 mx-auto max-w-6xl"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-10 mx-auto max-w-6xl"
           >
             {services.map((item) => (
               <ServiceItemCard key={item.id} item={item} />
@@ -83,8 +81,8 @@ const Home = () => {
         </div>
         <div className="wrapper py-10 flex flex-col items-center gap-5 z-10">
           <div data-aos="fade-up" className="flex items-center gap-3">
-            <img src={line} alt="line" className="w-[3rem] grayscale" />
-            <h6 className="font-medium text-primary">About Company</h6>
+            <img src={line} alt="line" className="w-[3rem]" />
+            <h6 className="font-medium text-secondary">About Company</h6>
           </div>
           <div className="grid md:grid-cols-2 gap-10 md:mb-[7rem]">
             <div className="relative" data-aos="fade-right">
@@ -95,9 +93,9 @@ const Home = () => {
                 className="rounded-lg h-[20rem] md:h-full md:max-h-[25rem] w-full object-cover object-right"
               />
               <div className="w-full sm:w-fit sm:max-w-[18rem] text-white h-full sm:h-fit absolute md:-bottom-[5rem] bottom-0 left-0 bg-primary/70 sm:bg-primary p-5 rounded-lg">
-                <h1 className="text-5xl font-bold">2+</h1>
-                <p className="font-medium mt-3">3 Years of Experience</p>
-                <p className="pl-5 border-l-2 border-white text-md mt-3">
+                <h1 className="text-5xl font-bold text-white">2+</h1>
+                <p className="font-medium mt-3 text-white">3 Years of Experience</p>
+                <p className="pl-5 border-l-2 border-white text-md mt-3 text-white">
                   The trusted choice for your software development solutions
                 </p>
               </div>
@@ -120,7 +118,7 @@ const Home = () => {
         <div className="wrapper pt-10 flex flex-col items-center gap-5 z-10">
           <div className="grid md:grid-cols-2 gap-10 md:mb-[7rem]">
             <div data-aos="fade-right" className="flex flex-col gap-5">
-              <img src={line} alt="line" className="w-[3rem] grayscale" />
+              <img src={line} alt="line" className="w-[3rem]" />
               <h3 className="heading-2 capitalize">who We Are</h3>
               <p>
                 AI WebX is a globally recognized leader in delivering
@@ -149,7 +147,7 @@ const Home = () => {
           className="flex flex-col items-center text-center gap-5"
         >
           <div className="flex items-center gap-3">
-            <img src={line} alt="line" className="w-[3rem] grayscale" />
+            <img src={line} alt="line" className="w-[3rem]" />
             <h3 className="heading-2 capitalize">our mission</h3>
           </div>
           <p className="max-w-3xl">

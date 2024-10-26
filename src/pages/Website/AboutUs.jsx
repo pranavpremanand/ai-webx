@@ -23,7 +23,7 @@ const AboutUs = () => {
         <img
           loading="lazy"
           src={banner}
-          className="h-full object-cover w-full object-top"
+          className="h-full object-cover w-full object-left md:object-top"
           alt="banner"
         />
       </div>
@@ -31,8 +31,8 @@ const AboutUs = () => {
         <div className="grid lg:grid-cols-2 lg:items-start gap-10">
           <div>
             <div data-aos="fade-up" className="flex items-center gap-3">
-              <img src={line} alt="line" className="w-[3rem] grayscale" />
-              <h6 className="font-medium text-primary capitalize">
+              <img src={line} alt="line" className="w-[3rem]" />
+              <h6 className="font-medium text-secondary capitalize">
                 Know about us
               </h6>
             </div>
@@ -71,8 +71,8 @@ const AboutUs = () => {
           className="px-6 flex flex-col items-center lg:items-start lg:pl-5 w-full z-10"
         >
           <div className="flex items-center gap-3 mb-5">
-            <img src={line} alt="line" className="w-[3rem] grayscale" />
-            <h6 className="font-medium text-primary">Work Experience</h6>
+            <img src={line} alt="line" className="w-[3rem]" />
+            <h6 className="font-medium text-secondary">Work Experience</h6>
           </div>
           <h2 className="text-[2rem] md:text-4xl capitalize font-semibold mb-5">
             We specialize in custom -tailored
@@ -137,8 +137,8 @@ const AboutUs = () => {
         />
         <div className="wrapper flex flex-col items-center">
           <div className="flex items-center gap-3 mb-5">
-            <img src={line} alt="line" className="w-[3rem] grayscale" />
-            <h6 className="font-medium text-primary">Work Process</h6>
+            <img src={line} alt="line" className="w-[3rem]" />
+            <h6 className="font-medium text-secondary">Work Process</h6>
           </div>
           <h2 className="heading mt-2">Our Work Process</h2>
           <div className="grid lg:grid-cols-3 mt-10 gap-6 lg:gap-10">

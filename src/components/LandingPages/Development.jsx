@@ -8,8 +8,8 @@ const Development = ({page}) => {
       <div className="blurred-blue right-[-10%] bottom-[-10%]"></div>
       <div className="wrapper py-10 flex flex-col items-center gap-5 z-10">
         <div data-aos="fade-right" className="flex items-center gap-3">
-          <img src={line} alt="line" className="w-[3rem] grayscale" />
-          <h6 className="font-medium text-primary">
+          <img src={line} alt="line" className="w-[3rem]" />
+          <h6 className="font-medium text-secondary">
             {page==="web-development" && "Web Development"}
             {page==="app-development" && "App Development"}
           </h6>

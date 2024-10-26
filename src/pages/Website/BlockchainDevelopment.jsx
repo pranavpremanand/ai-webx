@@ -1,6 +1,6 @@
 import React from "react";
-import img1 from "../../assets/images/services-details/ai1.jpeg";
-import img2 from "../../assets/images/services-details/ai2.jpeg";
+import img1 from "../../assets/images/services-details/blockchain1.jpg";
+import img2 from "../../assets/images/services-details/blockchain2.jpeg";
 import { Link } from "react-router-dom";
 import { services } from "../../constant";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
@@ -14,45 +14,33 @@ const BlockchainDevelopment = () => {
         data-aos="fade-up"
         src={img1}
         loading="lazy"
-        className="h-[25rem] object-cover rounded-3xl object-center"
-        alt="ai&ml development"
+        className="h-[25rem] object-cover rounded-3xl object-top"
+        alt="blockchain"
       />
       <div className="flex flex-col gap-4">
         <h2 data-aos="fade-up" className="heading">
-          AI & ML Development
+          Blockchain Solutions
         </h2>
         <p data-aos="fade-up" className="description">
-          In an era characterized by rapid technological advancement, artificial
-          intelligence (AI) and machine learning (ML) have emerged as
-          transformative forces driving innovation across various industries. At
-          AI WebX, we are at the forefront of this revolution, leveraging AI and
-          ML to develop intelligent solutions that empower businesses, enhance
-          operational efficiency, and create personalized experiences for users.
-          Our commitment to harnessing the power of data and advanced algorithms
-          positions us as a leader in the field of AI and ML development.
+          Blockchain technology is reshaping the modern business landscape,
+          offering unmatched transparency, security, and efficiency. At AI WebX,
+          we specialize in providing comprehensive blockchain development
+          services tailored to meet the unique needs of businesses across
+          industries. From secure smart contracts to decentralized applications,
+          our solutions empower organizations to optimize operations, mitigate
+          risks, and drive innovation.
         </p>
         <h2 data-aos="fade-up" className="text-2xl font-semibold mt-5">
-          Pioneering Intelligent Solutions
+          Blockchain Solutions for Business Transformation
         </h2>
         <p data-aos="fade-up" className="description">
-          Our approach to AI and ML development is grounded in a deep
-          understanding of our clients’ unique challenges and goals. We
-          collaborate closely with businesses to identify opportunities where AI
-          and ML can deliver significant value. From predictive analytics that
-          forecast trends to custom AI solutions that optimize workflows, our
-          services are tailored to meet the specific needs of each client. By
-          integrating AI-driven technologies into their operations, businesses
-          can unlock new levels of efficiency and insight.
-          <br />
-          <br />
-          One of the key areas where we excel is in predictive analytics. By
-          utilizing sophisticated machine learning algorithms, we help clients
-          analyze vast amounts of data to uncover patterns and make informed
-          decisions. Whether it’s predicting customer behavior, optimizing
-          supply chain processes, or enhancing marketing strategies, our
-          predictive analytics solutions empower businesses to stay ahead of the
-          curve. This data-driven approach not only improves decision-making but
-          also fosters a culture of innovation within organizations.
+          Beyond operational efficiency, blockchain offers opportunities for
+          innovation and growth. Companies can use it to manage digital assets,
+          enhance supply chain transparency, and enable new business models,
+          such as tokenization and decentralized finance. At AI WebX, we guide
+          organizations through adopting blockchain technologies, ensuring they
+          are not only prepared for the future but are at the forefront of
+          industry transformation.
         </p>
       </div>
       <div className="grid lg:grid-cols-2 gap-7">
@@ -61,7 +49,7 @@ const BlockchainDevelopment = () => {
             loading="lazy"
             src={img2}
             className="h-full max-h-[20rem] w-full lg:max-h-max object-cover rounded-md"
-            alt="app development"
+            alt="blockchain"
           />
         </div>
         <div className="flex flex-col gap-4">
@@ -71,12 +59,12 @@ const BlockchainDevelopment = () => {
                 ✓
               </div>
               <h3 className="text-lg font-semibold">
-                Empowerment Through Data
+                Smart Contracts Development
               </h3>
             </div>
             <p>
-              Our solutions help businesses make informed decisions by
-              harnessing data-driven insights.
+              Develop and deploy smart contracts to automate agreements, enhance
+              security, and reduce the risk of fraud.
             </p>
           </div>
           <div className="flex flex-col gap-2">
@@ -84,22 +72,24 @@ const BlockchainDevelopment = () => {
               <div className="w-[1.6rem] text-lg h-[1.6rem] rounded-full flex items-center justify-center border-2 border-[#00B0FC] text-[#00B0FC]">
                 ✓
               </div>
-              <h3 className="text-lg font-semibold">Future-Ready Solutions</h3>
+              <h3 className="text-lg font-semibold">
+                Decentralized Applications (DApps)
+              </h3>
             </div>
             <p>
-              We stay ahead of emerging trends to ensure our clients benefit
-              from the latest advancements in AI and ML technologies.
+              Build decentralized applications that provide enhanced security,
+              transparency, and autonomy for various business processes.
             </p>
           </div>
         </div>
       </div>
       <p>
-        At AI WebX, we are not only focused on the present but also on the
-        future of AI and ML development. We continuously explore emerging
-        technologies and methodologies to stay ahead of industry trends. Our
-        commitment to research and development enables us to refine our
-        solutions and offer cutting-edge services that align with the evolving
-        needs of businesses.
+        At AI WebX, we harness the power of blockchain to help businesses
+        modernize their operations. Our expertise includes developing solutions
+        that streamline processes, automate agreements, and enhance data
+        integrity, making business transactions more secure and trustworthy. By
+        leveraging blockchain's decentralized nature, companies can reduce
+        reliance on intermediaries and lower the risk of fraud.
       </p>
       <hr />
       <div className="flex w-full justify-between gap-6">
@@ -111,7 +101,7 @@ const BlockchainDevelopment = () => {
           />
           <div className="flex flex-col gap-1">
             <h6 className="text-md font-semibold">{prev.title}</h6>
-            <p className="flex items-center gap-2 text-sm text-[#219BE4]">
+            <p className="flex items-center gap-2 text-sm text-secondary">
               <IoIosArrowRoundBack className="text-2xl" /> Previous
             </p>
           </div>
@@ -124,7 +114,7 @@ const BlockchainDevelopment = () => {
           />
           <div className="flex flex-col gap-1">
             <h6 className="text-md font-semibold">{next.title}</h6>
-            <p className="flex items-center gap-2 text-sm text-[#219BE4]">
+            <p className="flex items-center gap-2 text-sm text-secondary">
               Next <IoIosArrowRoundForward className="text-2xl" />
             </p>
           </div>

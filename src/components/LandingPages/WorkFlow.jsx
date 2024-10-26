@@ -8,8 +8,8 @@ const WorkFlow = ({page}) => {
       <div className="blurred-blue left-[-10%] bottom-[-10%]"></div>
       <div data-aos="fade-up" className="wrapper flex flex-col items-center gap-5 z-10 py-10">
         <div className="flex items-center gap-3">
-          <img src={line} alt="line" className="w-[3rem] grayscale" />
-          <h6 className="font-medium text-primary">
+          <img src={line} alt="line" className="w-[3rem]" />
+          <h6 className="font-medium text-secondary">
             How We Build Your Success
           </h6>
         </div>

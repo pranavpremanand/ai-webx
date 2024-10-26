@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const SolveITNeeds = () => {
   return (
-    <div className="wrapper my-10">
+    <div data-aos="fade-up" className="wrapper my-10">
       <div className="min-h-[10rem] flex items-center relative">
         <img
           src={img}

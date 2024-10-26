@@ -15,13 +15,13 @@ const ServiceDetailsBanner = () => {
         alt=""
       />
       <div className="absolute h-full w-full bg-black/20"></div>
-      <div className="absolute z-10 py-2 top-[40%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
+      <div className="absolute z-10 py-2 top-[50%] left-1/2 -translate-x-1/2 w-full flex flex-col items-center px-3">
         <h1 data-aos="fade-up" className="heading text-white text-center">
           {title}
         </h1>
         <div
           data-aos="fade-up"
-          className="mt-5 text-base sm:text-xl font-medium px-3 py-2 w-fit flex flex-wrap justify-center text-white items-center gap-1 sm:gap-2"
+          className="mt-3 text-base sm:text-xl font-medium px-3 py-2 w-fit flex flex-wrap justify-center text-white items-center gap-1 sm:gap-2"
         >
           <Link to="/">Home</Link>/<Link to="/services">Services</Link>
         </div>
