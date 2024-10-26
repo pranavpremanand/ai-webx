@@ -45,13 +45,12 @@ const ServicePageLayout = () => {
                 <FaPhoneAlt className="text-3xl" />
               </div>
               <h4 className="text-2xl font-medium">Need Help? Call Here</h4>
-              <Link
-                to={`tel:${companyDetails.phone}`}
+              <p
                 className="font-semibold"
               >
                 {companyDetails.phone}
-              </Link>
-              <Link className="bg-secondary rounded-md w-full px-5 text-sm font-medium py-3 text-white hover:-translate-y-1 hover:shadow-xl hover:bg-white hover:text-secondary border border-secondary cursor-pointer transition-all duration-300">
+              </p>
+              <Link to={`tel:${companyDetails.phone}`} className="bg-secondary rounded-md w-full px-5 text-sm font-medium py-3 text-white hover:-translate-y-1 hover:shadow-xl hover:bg-white hover:text-secondary border border-secondary cursor-pointer transition-all duration-300">
                 Contact Now
               </Link>
             </div>
@@ -67,10 +66,10 @@ const ServicePageLayout = () => {
               <FaPhoneAlt className="text-3xl" />
             </div>
             <h4 className="text-2xl font-medium">Need Help? Call Here</h4>
-            <Link to={`tel:${companyDetails.phone}`} className="font-semibold">
+            <p className="font-semibold">
               {companyDetails.phone}
-            </Link>
-            <Link className="bg-secondary rounded-md w-full px-5 text-sm font-medium py-3 text-white hover:-translate-y-1 hover:shadow-xl hover:bg-white hover:text-secondary border border-secondary cursor-pointer transition-all duration-300">
+            </p>
+            <Link to={`tel:${companyDetails.phone}`} className="bg-secondary rounded-md w-full px-5 text-sm font-medium py-3 text-white hover:-translate-y-1 hover:shadow-xl hover:bg-white hover:text-secondary border border-secondary cursor-pointer transition-all duration-300">
               Contact Now
             </Link>
           </div>
