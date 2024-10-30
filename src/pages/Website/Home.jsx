@@ -12,6 +12,7 @@ import aboutImg from "../../assets/images/home-aboutus.jpg";
 import whoWeAre from "../../assets/images/who-we-are.jpg";
 import ServiceItemCard from "../../components/Website/ServiceItemCard";
 import { Link } from "react-router-dom";
+import WorkFlow from "../../components/WorkFlow";
 
 const Home = () => {
   return (
@@ -80,7 +81,9 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className="wrapper py-10 flex flex-col items-center gap-5 z-10">
+
+        <WorkFlow />
+        <div className="wrapper pb-10 flex flex-col items-center gap-5 z-10">
           <div data-aos="fade-up" className="flex items-center gap-3">
             <img src={line} alt="line" className="w-[3rem]" />
             <h6 className="font-medium text-secondary">About Company</h6>
@@ -95,7 +98,9 @@ const Home = () => {
               />
               <div className="w-full sm:w-fit sm:max-w-[18rem] text-white h-full sm:h-fit absolute md:-bottom-[5rem] bottom-0 left-0 bg-primary/70 sm:bg-primary p-5 rounded-lg">
                 <h1 className="text-5xl font-bold text-white">2+</h1>
-                <p className="font-medium mt-3 text-white">Years of Experience</p>
+                <p className="font-medium mt-3 text-white">
+                  Years of Experience
+                </p>
                 <p className="pl-5 border-l-2 border-white text-md mt-3 text-white">
                   The trusted choice for your software development solutions
                 </p>
@@ -112,7 +117,9 @@ const Home = () => {
                 adapt and excel in an increasingly complex and competitive
                 marketplace.
               </p>
-              <Link to='/about-us' className="primary-btn mt-7 w-fit">Know More</Link>
+              <Link to="/about-us" className="primary-btn mt-7 w-fit">
+                Know More
+              </Link>
             </div>
           </div>
         </div>

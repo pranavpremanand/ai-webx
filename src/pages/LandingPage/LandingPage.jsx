@@ -10,7 +10,7 @@ import Footer from "../../components/Footer";
 import LeadForm from "../../components/LeadForm";
 import WhatsAppIcon from "../../components/WhatsAppIcon";
 import { industriesCompanyServe } from "../../constant";
-import WorkFlow from "../../components/LandingPages/WorkFlow";
+import WorkFlow from "../../components/WorkFlow";
 
 const LandingPage = ({ page }) => {
   return (

@@ -227,6 +227,7 @@ export const webDevelopmentWorkflow = [
       "Our commitment extends beyond launch. We provide ongoing maintenance, security updates, and expert assistance to keep your website thriving in the ever-evolving digital landscape.",
   },
 ];
+
 export const appDevelopmentWorkflow = [
   {
     id: "01",
@@ -264,6 +265,46 @@ export const appDevelopmentWorkflow = [
       "Your app's success is our priority. We offer ongoing support to address any issues and provide updates to keep your app functioning at its best.",
   },
 ];
+
+// General Development Workflow
+export const generalDevelopmentWorkflow = [
+  {
+    id: "01",
+    title: "Requirements Gathering",
+    icon: require("./assets/images/icons/requirement-analysis.png"),
+    description:
+      "We engage with stakeholders to gather comprehensive project requirements and understand their goals through collaborative discussions.",
+  },
+  {
+    id: "02",
+    title: "Design & Planning",
+    icon: require("./assets/images/icons/planning.png"),
+    description:
+      "Our team crafts a user-centric design and creates a detailed project plan, outlining the architecture, timelines, and deliverables.",
+  },
+  {
+    id: "03",
+    title: "Development",
+    icon: require("./assets/images/icons/software-development.png"),
+    description:
+      "Our skilled developers bring your vision to life, leveraging modern technologies to build a secure and scalable product that meets all specifications.",
+  },
+  {
+    id: "04",
+    title: "Testing",
+    icon: require("./assets/images/icons/testing.png"),
+    description:
+      "We subject your product to rigorous testing to ensure flawless performance across all devices, identifying and resolving any issues before launch.",
+  },
+  {
+    id: "05",
+    title: "Support",
+    icon: require("./assets/images/icons/support.png"),
+    description:
+      "Our commitment extends beyond launch, providing ongoing maintenance and support to keep your product thriving in the ever-evolving digital landscape.",
+  },
+];
+
 
 // testimonials
 export const testimonials = [
