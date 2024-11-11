@@ -68,10 +68,15 @@ export const services = [
 
 // details
 export const companyDetails = {
-  phone: "+916301350318",
-  email: "info@aiwebx.in",
-  location: "Bengaluru, India, 560076",
+  phone: "+000000000",
+  email: "abc@example.com",
+  location: "Lorem ipsum dolor sit amet",
 };
+// export const companyDetails = {
+//   phone: "+916301350318",
+//   email: "info@aiwebx.in",
+//   location: "Bengaluru, India, 560076",
+// };
 
 export const landingPageNavLinks = [
   {

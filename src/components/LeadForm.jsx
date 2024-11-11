@@ -24,36 +24,37 @@ const LeadForm = () => {
 
   // handle form submit click
   const handleFormSubmit = async (values) => {
-    setSpinner(true);
+    reset();
+    // setSpinner(true);
 
-    var emailBody = "Name: " + values.name + "\n\n";
-    emailBody += "Email: " + values.email + "\n\n";
-    emailBody += "Subject: " + values.subject + "\n\n";
-    emailBody += "Message:\n" + values.message;
+    // var emailBody = "Name: " + values.name + "\n\n";
+    // emailBody += "Email: " + values.email + "\n\n";
+    // emailBody += "Subject: " + values.subject + "\n\n";
+    // emailBody += "Message:\n" + values.message;
 
-    // Construct the request payload
-    var payload = {
-      to: companyDetails.email,
-      subject: "You have a new message from AI WebX",
-      body: emailBody,
-    };
+    // // Construct the request payload
+    // var payload = {
+    //   to: companyDetails.email,
+    //   subject: "You have a new message from AI WebX",
+    //   body: emailBody,
+    // };
 
-    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    })
-      .then((response) => response.json())
-      .then(() => {
-        toast.success("Email sent successfully");
-        reset();
-      })
-      .catch((error) => {
-        toast.error(error.message);
-      })
-      .finally(() => setSpinner(false));
+    // await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(payload),
+    // })
+    //   .then((response) => response.json())
+    //   .then(() => {
+    //     toast.success("Email sent successfully");
+    //     reset();
+    //   })
+    //   .catch((error) => {
+    //     toast.error(error.message);
+    //   })
+    //   .finally(() => setSpinner(false));
   };
   return (
     <div id="contact" className="w-full py-[5rem] relative">
