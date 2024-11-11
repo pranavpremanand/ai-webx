@@ -25,6 +25,7 @@ const LeadForm = () => {
   // handle form submit click
   const handleFormSubmit = async (values) => {
     reset();
+    
     // setSpinner(true);
 
     // var emailBody = "Name: " + values.name + "\n\n";
