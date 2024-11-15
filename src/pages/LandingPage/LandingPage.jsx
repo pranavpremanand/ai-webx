@@ -11,6 +11,8 @@ import LeadForm from "../../components/LeadForm";
 import WhatsAppIcon from "../../components/WhatsAppIcon";
 import { industriesCompanyServe } from "../../constant";
 import WorkFlow from "../../components/WorkFlow";
+import InquiryForm from "../../components/InquiryForm";
+import Portfolio from "../../components/Portfolio";
 
 const LandingPage = ({ page }) => {
   return (
@@ -18,8 +20,14 @@ const LandingPage = ({ page }) => {
       <WhatsAppIcon />
       <Header />
       <Banner page={page} />
+      <div
+        className="pt-[2rem]"
+      >
+        <InquiryForm />
+      </div>
       <Services page={page} />
       <Development page={page} />
+      <Portfolio page={page} />
       <div className="wrapper py-[2rem] flex flex-col gap-3">
         <div className="flex flex-col gap-3">
           <h2
