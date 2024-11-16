@@ -21,7 +21,7 @@ const AboutUs = () => {
       <Header />
       <div data-aos="fade-down" className="h-[50vh] md:h-[60vh]">
         <img
-loading="lazy"          
+          loading="lazy"
           src={banner}
           className="h-full object-cover w-full object-left md:object-top"
           alt="banner"
@@ -50,8 +50,8 @@ loading="lazy"
           </div>
           <div className="h-full w-full">
             <img
-loading="lazy"              src={img1}
-              
+              loading="lazy"
+              src={img1}
               alt="about us"
               className="object-contain max-h-[30rem] mx-auto"
             />
@@ -61,9 +61,9 @@ loading="lazy"              src={img1}
 
       <section className="w-full grid lg:grid-cols-[60%_35%] items-end relative">
         <img
-loading="lazy"          src={img2}
+          loading="lazy"
+          src={img2}
           alt="experience"
-          
           className="w-full h-[80vh] lg:block hidden object-contain z-10 grayscale-[20%]"
         />
         <div
@@ -78,16 +78,16 @@ loading="lazy"          src={img2}
             We specialize in custom -tailored
           </h2>
           <img
-loading="lazy"            src={img2}
-            
+            loading="lazy"
+            src={img2}
             alt="experience"
             className="w-full max-w-[20rem] block lg:hidden object-contain mx-auto object-right z-10"
           />
           <div className="z-10 bg-[#010C2A] w-full p-5 grid md:grid-cols-3 gap-5 lg:w-[70vw] lg:-translate-x-[30vw]">
             <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5">
               <img
-loading="lazy"                src={projectsImg}
-                
+                loading="lazy"
+                src={projectsImg}
                 alt="projects-icon"
                 className="h-[2rem] obj2ct-c -mb-4ontain"
               />
@@ -98,8 +98,8 @@ loading="lazy"                src={projectsImg}
             </div>
             <div className="flex flex-col gap-2 text-white items-start md:border-r-2 border-white/40 p-5 md:pl-10">
               <img
-loading="lazy"                src={clientsImg}
-                
+                loading="lazy"
+                src={clientsImg}
                 alt="projects-icon"
                 className="h-[2rem] obj2ct-c -mb-4ontain"
               />
@@ -110,8 +110,8 @@ loading="lazy"                src={clientsImg}
             </div>
             <div className="flex flex-col gap-2 text-white items-start p-5 md:pl-10">
               <img
-loading="lazy"                src={awardsImg}
-                
+                loading="lazy"
+                src={awardsImg}
                 alt="projects-icon"
                 className="h-[2rem] obj2ct-c -mb-4ontain"
               />
@@ -124,14 +124,14 @@ loading="lazy"                src={awardsImg}
 
       <section className="relative my-[5rem]">
         <img
-loading="lazy"          src={bgShape}
-          
+          loading="lazy"
+          src={bgShape}
           className="w-[37%] absolute left-3 top-0 object-contain"
           alt=""
         />
         <img
-loading="lazy"          src={bgShape}
-          
+          loading="lazy"
+          src={bgShape}
           className="w-[37%] absolute right-3 rotate-[125deg] top-0 object-contain"
           alt=""
         />
@@ -144,8 +144,8 @@ loading="lazy"          src={bgShape}
           <div className="grid lg:grid-cols-3 mt-10 gap-6 lg:gap-10">
             <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
               <img
-loading="lazy"                src={process1}
-                
+                loading="lazy"
+                src={process1}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
               />
@@ -154,15 +154,16 @@ loading="lazy"                src={process1}
                 We define clear goals to align with your vision and needs.
               </p>
               <img
-loading="lazy"                src={arrow}
+                loading="lazy"
+                src={arrow}
                 className="h-[5rem] sm:h-[6rem] object-contain absolute right-[-2rem] sm:right-[-3.5rem] rotate-[100deg] lg:rotate-12 bottom-[-3.5rem] lg:top-0"
                 alt=""
               />
             </div>
             <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
               <img
-loading="lazy"                src={process2}
-                
+                loading="lazy"
+                src={process2}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
               />
@@ -171,15 +172,16 @@ loading="lazy"                src={process2}
                 Choose the right solution tailored to your requirements.
               </p>
               <img
-loading="lazy"                src={arrow}
+                loading="lazy"
+                src={arrow}
                 className="h-[5rem] sm:h-[6rem] object-contain absolute left-[-2rem] sm:left-[-3.5rem] lg:left-auto lg:right-[-3.5rem] rotate-[80deg] lg:-rotate-12 scale-y-[-1] bottom-[-3.5rem] sm:bottom-0"
                 alt=""
               />
             </div>
             <div className="max-w-[20rem] lg:w-full z-10 relative bg-white/80 flex flex-col gap-2 items-center text-center justify-center aspect-square rounded-full p-5 border-2 border-primary">
               <img
-loading="lazy"                src={process3}
-                
+                loading="lazy"
+                src={process3}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
               />

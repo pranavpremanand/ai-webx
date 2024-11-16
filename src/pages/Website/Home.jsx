@@ -4,8 +4,6 @@ import Testimonials from "../../components/Testimonials";
 import AssociatedWith from "../../components/AssociatedWith";
 import Footer from "../../components/Footer";
 import LeadForm from "../../components/LeadForm";
-import Header from "../../components/Website/Header";
-import Banner from "../../components/Website/Banner";
 import line from "../../assets/images/line.png";
 import { industriesCompanyServe, services } from "../../constant";
 import aboutImg from "../../assets/images/home-aboutus.webp";
@@ -13,6 +11,8 @@ import whoWeAre from "../../assets/images/who-we-are.webp";
 import ServiceItemCard from "../../components/Website/ServiceItemCard";
 import { Link } from "react-router-dom";
 import WorkFlow from "../../components/WorkFlow";
+const Header = React.lazy(() => import("../../components/Website/Header"));
+const Banner = React.lazy(() => import("../../components/Website/Banner"));
 
 const Home = () => {
   return (
