@@ -22,7 +22,6 @@ const Banner = () => {
   return (
     <div
       id="banner"
-      
       className="min-h-screen w-full relative flex justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
@@ -30,7 +29,7 @@ const Banner = () => {
         <div className="flex flex-col gap-4 items-start justify-center">
           <p
             data-aos="fade-right"
-            className="bg-[#ECECF2] p-1 text-gray-500 text-sm"
+            className="bg-[#ECECF2] p-1 text-gray-900 text-sm"
           >
             IT Services
           </p>
@@ -48,17 +47,27 @@ const Banner = () => {
             avenues. Our mission is to empower businesses to thrive in a rapidly
             evolving digital landscape.
           </p>
-          <Link to="/contact" data-aos="fade-right" className="primary-btn mt-10">
+          <Link
+            to="/contact"
+            data-aos="fade-right"
+            className="primary-btn mt-10"
+          >
             Get Started
           </Link>
         </div>
         <div data-aos="fade-left" className="lg:pl-5 lg:pt-4 lg:pb-2 w-fit">
           <img
-loading="lazy"            id="robot"
+            loading="lazy"
+            id="robot"
             src={robot}
-            
+            srcset={`${robot} 300w,
+             ${robot} 600w,
+             ${robot} 1200w`}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
             alt="robot"
-            className="h-[30vh] lg:h-[40vh] w-full object-contain"
+            width="600"
+            height="400"
+            class="h-[30vh] lg:h-[40vh] w-full object-contain"
           />
         </div>
       </div>
