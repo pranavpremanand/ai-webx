@@ -1,5 +1,5 @@
 import React from "react";
-import bannerImg from "../../assets/images/contact-page-banner.png";
+import bannerImg from "../../assets/images/contact-page-banner.webp";
 import { Link } from "react-router-dom";
 import Header from "../../components/Website/Header";
 import Footer from "../../components/Footer";

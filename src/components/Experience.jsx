@@ -1,5 +1,5 @@
 import React from "react";
-import expImg from "../assets/images/experience.jpg";
+import expImg from "../assets/images/experience.webp";
 import line from "../assets/images/line.png";
 import projectsImg from "../assets/images/icons/projects.png";
 import clientsImg from "../assets/images/icons/clients.png";

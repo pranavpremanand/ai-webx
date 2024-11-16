@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../components/Website/Header";
-import banner from "../../assets/images/about-us-page-banner.jpg";
+import banner from "../../assets/images/about-us-page-banner.webp";
 import line from "../../assets/images/line.png";
 import img1 from "../../assets/images/about-us-page-2.png";
 import img2 from "../../assets/images/about-us-page-3.png";

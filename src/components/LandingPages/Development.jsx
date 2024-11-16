@@ -1,6 +1,6 @@
 import React from "react";
 import line from "../../assets/images/line.png";
-import developmentImg from "../../assets/images/landingpages/development-1.jpg";
+import developmentImg from "../../assets/images/landingpages/development-1.webp";
 
 const Development = ({page}) => {
   return (
