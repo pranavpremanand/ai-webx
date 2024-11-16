@@ -49,7 +49,7 @@ const Services = ({ page }) => {
               >
                 <div className="w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
                   <img
-                    src={item.icon}
+loading="lazy"                    src={item.icon}
                     alt="icon"
                     className="w-[3rem] grayscale"
                   />
@@ -67,7 +67,7 @@ const Services = ({ page }) => {
               >
                 <div className="w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
                   <img
-                    src={item.icon}
+loading="lazy"                    src={item.icon}
                     alt="icon"
                     className="w-[3rem] grayscale"
                   />

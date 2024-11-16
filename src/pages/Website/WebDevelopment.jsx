@@ -10,9 +10,9 @@ const WebDevelopment = () => {
   return (
     <div className="flex flex-col gap-10">
       <img
-        data-aos="fade-up"
+loading="lazy"        data-aos="fade-up"
         src={img1}
-        loading="lazy"
+        
         className="h-[25rem] object-cover rounded-3xl object-center"
         alt="web development"
       />
@@ -53,7 +53,7 @@ const WebDevelopment = () => {
       <div className="grid lg:grid-cols-2 gap-7">
         <div className="h-full w-full">
           <img
-            loading="lazy"
+loading="lazy"            
             src={img2}
             className="h-full max-h-[20rem] w-full lg:max-h-max object-cover object-left rounded-md"
             alt="web development"
@@ -117,7 +117,7 @@ const WebDevelopment = () => {
       <div className="flex flex-col sm:flex-row w-full justify-end gap-6">
         <Link to={next.link} className="flex items-center self-end gap-3">
           <img
-            src={next.icon}
+loading="lazy"            src={next.icon}
             alt=""
             className="w-[3rem] h-[3rem] object-contain grayscale"
           />

@@ -23,7 +23,7 @@ const Banner = ({page}) => {
   return (
     <div
       id="banner"
-      loading="lazy"
+      
       className="min-h-screen w-full relative flex justify-center bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${bannerImg})` }}
     >
@@ -57,9 +57,9 @@ const Banner = ({page}) => {
         </div>
         <div data-aos="fade-left" className="lg:pl-5 lg:pt-4 lg:pb-2 w-fit">
           <img
-            id="robot"
+loading="lazy"            id="robot"
             src={robot}
-            loading="lazy"
+            
             alt="robot"
             className="h-[30vh] lg:h-[40vh] w-full object-contain"
           />

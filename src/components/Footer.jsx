@@ -1,5 +1,5 @@
 import React from "react";
-import bg from "../assets/images/footer-bg.png";
+import bg from "../assets/images/footer-bg.jpg";
 import logo from "../assets/images/logo/logo1.png";
 import emailIcon from "../assets/images/icons/email.png";
 import phoneIcon from "../assets/images/icons/phone.png";
@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-6 text-md">
               <li className="flex gap-2 items-center">
                 <img
-                  src={emailIcon}
+loading="lazy"                  src={emailIcon}
                   alt="email"
                   className="w-[1.5rem] object-contain grayscale"
                 />
@@ -51,7 +51,7 @@ const Footer = () => {
               </li>
               <li className="flex gap-2 items-center">
                 <img
-                  src={phoneIcon}
+loading="lazy"                  src={phoneIcon}
                   alt="phone"
                   className="w-[1.5rem] object-contain grayscale"
                 />
@@ -61,7 +61,7 @@ const Footer = () => {
               </li>
               <li className="flex gap-2 items-start">
                 <img
-                  src={locationIcon}
+loading="lazy"                  src={locationIcon}
                   alt="location"
                   className="w-[1.5rem] object-contain grayscale"
                 />

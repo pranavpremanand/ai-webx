@@ -14,7 +14,7 @@ const OurServices = () => {
       <Header />
       <div data-aos="fade-down" className="h-[50vh] md:h-[60vh]">
         <img
-          src={banner}
+loading="lazy"          src={banner}
           className="h-full object-cover w-full object-center"
           alt="banner"
         />

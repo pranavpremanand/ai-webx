@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { services } from "../../constant";
-import bannerImg from "../../assets/images/services-details/services-details-page-banner.jpeg";
+import bannerImg from "../../assets/images/services-details/services-details-page-banner.jpg";
 
 const ServiceDetailsBanner = () => {
   const { pathname } = useLocation();
@@ -9,8 +9,8 @@ const ServiceDetailsBanner = () => {
   return (
     <div className="min-h-[45vh] md:min-h-[70vh] w-full page-banner relative">
       <img
-        src={bannerImg}
-        loading="lazy"
+loading="lazy"        src={bannerImg}
+        
         className="absolute h-full w-full object-cover z-0"
         alt=""
       />

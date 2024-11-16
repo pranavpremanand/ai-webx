@@ -7,7 +7,7 @@ const SolveITNeeds = () => {
     <div data-aos="fade-up" className="wrapper my-10">
       <div className="min-h-[10rem] flex items-center relative">
         <img
-          src={img}
+loading="lazy"          src={img}
           alt="bg"
           className="w-full h-full object-cover object-center absolute"
         />

@@ -16,7 +16,7 @@ const Development = ({page}) => {
         </div>
         <div className="grid md:grid-cols-[50%_40%] items-center gap-10 mt-4">
           <img
-            data-aos="fade-right"
+loading="lazy"            data-aos="fade-right"
             src={developmentImg}
             alt="development"
             className="md:h-[50vh] w-full object-cover rounded"

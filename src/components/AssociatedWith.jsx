@@ -65,7 +65,7 @@ const AssociatedWith = () => {
         {logos.map((img, index) => (
           <div key={index} className="keen-slider__slide flex justify-center">
             <img
-              src={img}
+loading="lazy"              src={img}
               alt="featured in"
               className="h-[7rem] w-[12rem] object-contain"
             />

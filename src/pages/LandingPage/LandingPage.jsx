@@ -128,7 +128,7 @@ const LandingPage = ({ page }) => {
               className="p-5 rounded-lg shadow-lg relative group overflow-hidden min-h-[12rem]"
             >
               <img
-                src={item.img}
+loading="lazy"                src={item.img}
                 alt={item.title}
                 className="w-full h-full object-cover absolute top-0 left-0 rounded group-hover:scale-110 transition-all duration-300"
               />

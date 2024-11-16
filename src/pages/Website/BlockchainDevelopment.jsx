@@ -11,9 +11,9 @@ const BlockchainDevelopment = () => {
   return (
     <div className="flex flex-col gap-10">
       <img
-        data-aos="fade-up"
+loading="lazy"        data-aos="fade-up"
         src={img1}
-        loading="lazy"
+        
         className="h-[25rem] object-cover rounded-3xl object-top"
         alt="blockchain"
       />
@@ -46,7 +46,7 @@ const BlockchainDevelopment = () => {
       <div className="grid lg:grid-cols-2 gap-7">
         <div className="h-full w-full">
           <img
-            loading="lazy"
+loading="lazy"            
             src={img2}
             className="h-full max-h-[20rem] w-full lg:max-h-max object-cover rounded-md"
             alt="blockchain"
@@ -95,7 +95,7 @@ const BlockchainDevelopment = () => {
       <div className="flex w-full justify-between gap-6">
         <Link to={prev.link} className="flex items-center gap-3">
           <img
-            src={prev.icon}
+loading="lazy"            src={prev.icon}
             alt=""
             className="w-[3rem] h-[3rem] hidden sm:inline-block object-contain grayscale"
           />
@@ -108,7 +108,7 @@ const BlockchainDevelopment = () => {
         </Link>
         <Link to={next.link} className="flex items-center gap-3">
           <img
-            src={next.icon}
+loading="lazy"            src={next.icon}
             alt=""
             className="w-[3rem] h-[3rem] hidden sm:inline-block object-contain grayscale"
           />

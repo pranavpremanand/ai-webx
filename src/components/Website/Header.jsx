@@ -20,8 +20,8 @@ const Header = () => {
           duration={500}
         >
           <img
-            src={logo}
             loading="lazy"
+            src={logo}
             alt="logo"
             className="h-[5rem] md:h-[6.5rem] object-contain"
           />
