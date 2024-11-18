@@ -48,9 +48,13 @@ const InquiryForm = () => {
       body: JSON.stringify(payload),
     })
       .then((response) => response.json())
-      .then(() => {
-        toast.success("Email sent successfully");
-        reset();
+      .then((res) => {
+        if (res.error) {
+          toast.error(res.error);
+        } else {
+          toast.success("Email sent successfully");
+          reset();
+        }
       })
       .catch((error) => {
         toast.error(error.message);
