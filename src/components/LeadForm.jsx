@@ -166,7 +166,8 @@ const LeadForm = () => {
         </div>
         <div className="hidden md:block h-full">
           <img
-loading="lazy"            src={img}
+            loading="lazy"
+            src={img}
             alt="contact-us"
             className="h-full rounded-lg object-cover object-center w-full"
           />

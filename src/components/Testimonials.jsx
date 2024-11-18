@@ -55,7 +55,10 @@ const Testimonials = () => {
               className="testimonial-item bg-white opacity-0 absolute inset-0 w-full h-full max-h-fit flex flex-col justify-center p-5 rounded-md border-2 border-black/60 shadow-2xl"
             >
               <img
-loading="lazy"                src={item.img}
+                width="auto"
+                height="auto"
+                loading="lazy"
+                src={item.img}
                 className="w-[7rem] h-[7rem] object-contain rounded-full absolute top-[-3.5rem] left-1/2 -translate-x-1/2 sm:-translate-x-0 sm:left-[-3.5rem] sm:top-1/2 sm:-translate-y-1/2"
                 alt=""
               />

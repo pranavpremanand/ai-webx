@@ -7,7 +7,7 @@ import {
 } from "../constant";
 
 const WorkFlow = ({ page }) => {
-  let workflow
+  let workflow;
 
   if (page === "web-development") {
     workflow = webDevelopmentWorkflow;
@@ -39,7 +39,10 @@ const WorkFlow = ({ page }) => {
               </div>
               <div className="z-10 w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
                 <img
-loading="lazy"                  src={item.icon}
+                  loading="lazy"
+                  width="auto"
+                  height="auto"
+                  src={item.icon}
                   alt="icon"
                   className="w-[3rem] grayscale"
                 />

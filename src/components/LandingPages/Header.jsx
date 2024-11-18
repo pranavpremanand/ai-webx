@@ -21,6 +21,8 @@ const Header = () => {
           <img
             src={logo}
             alt="logo"
+            width="auto"
+            height="auto"
             className="h-[5rem] md:h-[6.5rem] object-contain"
           />
         </ReactScrollLink>
@@ -60,7 +62,13 @@ const Header = () => {
         className="z-10 p-2"
       >
         <div className="mb-6 flex items-center justify-between pr-[.7rem] py-[.4rem]">
-          <img src={logo} alt="logo" className="h-[2.5rem] object-contain" />
+          <img
+            width="auto"
+            height="auto"
+            src={logo}
+            alt="logo"
+            className="h-[2.5rem] object-contain"
+          />
           <button
             onClick={() => setIsOpen(false)}
             className="text-primary text-[2.2rem]"

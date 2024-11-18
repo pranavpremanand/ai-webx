@@ -11,6 +11,8 @@ const Experience = () => {
       <img
         loading="lazy"
         src={expImg}
+        width="auto"
+        height="auto"
         alt="experience"
         className="w-full h-[70vh] lg:block hidden object-cover z-10 grayscale-[20%]"
       />
@@ -28,6 +30,8 @@ const Experience = () => {
         <img
           loading="lazy"
           src={expImg}
+          width="auto"
+          height="auto"
           alt="experience"
           className="w-full h-[50vh] block lg:hidden object-cover object-right z-10"
         />

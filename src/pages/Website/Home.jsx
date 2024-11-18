@@ -67,7 +67,10 @@ const Home = () => {
               className="p-5 rounded-lg shadow-lg relative group overflow-hidden min-h-[12rem]"
             >
               <img
-loading="lazy"                src={item.img}
+                width="auto"
+                height="auto"
+                loading="lazy"
+                src={item.img}
                 alt={item.title}
                 className="w-full h-full object-cover absolute top-0 left-0 rounded group-hover:scale-110 transition-all duration-300"
               />
@@ -91,8 +94,10 @@ loading="lazy"                src={item.img}
           <div className="grid md:grid-cols-2 gap-10 md:mb-[7rem]">
             <div className="relative" data-aos="fade-right">
               <img
-loading="lazy"                src={aboutImg}
-                
+                loading="lazy"
+                src={aboutImg}
+                width="auto"
+                height="auto"
                 alt="about company"
                 className="rounded-lg h-[20rem] md:h-full md:max-h-[25rem] w-full object-cover object-right"
               />
@@ -140,8 +145,10 @@ loading="lazy"                src={aboutImg}
             </div>
             <div data-aos="fade-left" className="">
               <img
-loading="lazy"                src={whoWeAre}
-                
+                width="auto"
+                height="auto"
+                loading="lazy"
+                src={whoWeAre}
                 alt="about company"
                 className="rounded-lg h-[20rem] md:h-full md:max-h-[25rem] w-full object-cover object-right"
               />
