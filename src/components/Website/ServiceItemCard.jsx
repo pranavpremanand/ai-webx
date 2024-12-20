@@ -11,8 +11,8 @@ const ServiceItemCard = ({ item }) => {
       <div className="flex flex-col gap-2 items-start">
         <div className="group-hover:scale-[120%] transition-all duration-300 w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
           <img
-            width="auto"
-            height="auto"
+            width="75"
+            height="75"
             loading="lazy"
             src={item.icon}
             alt="icon"

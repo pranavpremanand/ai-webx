@@ -14,9 +14,12 @@ const OurServices = () => {
       <Header />
       <div data-aos="fade-down" className="h-[50vh] md:h-[60vh]">
         <img
-loading="lazy"          src={banner}
+          loading="lazy"
+          src={banner}
           className="h-full object-cover w-full object-center"
           alt="banner"
+          width="800"
+          height="600"
         />
       </div>
       <div
@@ -50,9 +53,9 @@ loading="lazy"          src={banner}
           </div>
         </div>
       </div>
-      <Testimonials/>
-      <SolveITNeeds/>
-      <Footer/>
+      <Testimonials />
+      <SolveITNeeds />
+      <Footer />
     </div>
   );
 };

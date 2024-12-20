@@ -23,6 +23,8 @@ const AboutUs = () => {
         <img
           loading="lazy"
           src={banner}
+          width="800"
+          height="600"
           className="h-full object-cover w-full object-left md:object-top"
           alt="banner"
         />
@@ -52,6 +54,8 @@ const AboutUs = () => {
             <img
               loading="lazy"
               src={img1}
+              width="500"
+              height="400"
               alt="about us"
               className="object-contain max-h-[30rem] mx-auto"
             />
@@ -64,6 +68,8 @@ const AboutUs = () => {
           loading="lazy"
           src={img2}
           alt="experience"
+          width="800"
+          height="600"
           className="w-full h-[80vh] lg:block hidden object-contain z-10 grayscale-[20%]"
         />
         <div
@@ -80,6 +86,8 @@ const AboutUs = () => {
           <img
             loading="lazy"
             src={img2}
+            width="400"
+            height="300"
             alt="experience"
             className="w-full max-w-[20rem] block lg:hidden object-contain mx-auto object-right z-10"
           />
@@ -148,6 +156,8 @@ const AboutUs = () => {
                 src={process1}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
+                width="100"
+                height="100"
               />
               <h5 className="text-xl font-semibold">Goal Setting</h5>
               <p className="px-6 text-sm">
@@ -166,6 +176,8 @@ const AboutUs = () => {
                 src={process2}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
+                width="100"
+                height="100"
               />
               <h5 className="text-xl font-semibold">Select Service</h5>
               <p className="px-6 text-sm">
@@ -184,6 +196,8 @@ const AboutUs = () => {
                 src={process3}
                 className="w-[3rem] sm:w-[5rem] object-contain"
                 alt="process"
+                width="100"
+                height="100"
               />
               <h5 className="text-xl font-semibold">Solve Problem</h5>
               <p className="px-6 text-sm">

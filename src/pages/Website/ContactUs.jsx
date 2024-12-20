@@ -20,8 +20,10 @@ const ContactUs = () => {
       <Header />
       <div className="min-h-[45vh] md:min-h-[70vh] w-full page-banner relative">
         <img
-loading="lazy"          src={bannerImg}
-          
+          loading="lazy"
+          src={bannerImg}
+          width="800"
+          height="600"
           className="absolute h-full w-full object-cover object-center z-0"
           alt=""
         />

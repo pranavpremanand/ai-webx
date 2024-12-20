@@ -168,6 +168,8 @@ const LeadForm = () => {
           <img
             loading="lazy"
             src={img}
+            width="600"
+            height="600"
             alt="contact-us"
             className="h-full rounded-lg object-cover object-center w-full"
           />

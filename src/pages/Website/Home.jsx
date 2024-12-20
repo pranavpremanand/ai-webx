@@ -67,8 +67,8 @@ const Home = () => {
               className="p-5 rounded-lg shadow-lg relative group overflow-hidden min-h-[12rem]"
             >
               <img
-                width="auto"
-                height="auto"
+                width="200"
+                height="100"
                 loading="lazy"
                 src={item.img}
                 alt={item.title}
@@ -96,8 +96,8 @@ const Home = () => {
               <img
                 loading="lazy"
                 src={aboutImg}
-                width="auto"
-                height="auto"
+                width="500"
+                height="400"
                 alt="about company"
                 className="rounded-lg h-[20rem] md:h-full md:max-h-[25rem] w-full object-cover object-right"
               />
@@ -145,8 +145,8 @@ const Home = () => {
             </div>
             <div data-aos="fade-left" className="">
               <img
-                width="auto"
-                height="auto"
+                width="500"
+                height="400"
                 loading="lazy"
                 src={whoWeAre}
                 alt="about company"

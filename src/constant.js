@@ -54,7 +54,7 @@ export const services = [
 export const companyDetails = {
   phone: "+916301350318",
   email: "info@aiwebx.in",
-  location: "Bengaluru, India, 560076",
+  location: "10-47 Ambedkar Nagar, Jawaharnagar, Turumalagiri, Hyderabad - 500087, Telangana, India",
 };
 
 export const landingPageNavLinks = [

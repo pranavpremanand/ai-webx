@@ -40,8 +40,8 @@ const WorkFlow = ({ page }) => {
               <div className="z-10 w-[4rem] h-[4rem] p-3 rounded-full bg-primary/10 flex items-center justify-center">
                 <img
                   loading="lazy"
-                  width="auto"
-                  height="auto"
+                  width="50"
+                  height="50"
                   src={item.icon}
                   alt="icon"
                   className="w-[3rem] grayscale"

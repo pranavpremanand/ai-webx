@@ -43,7 +43,13 @@ const Testimonials = () => {
             At AI WebX, we take pride in the success of our clients. Here's what
             some of them have to say about their experience working with us:
           </p>
-          <img src={users} alt="users" className="w-[8rem] object-contain" />
+          <img
+            width="150"
+            height="50"
+            src={users}
+            alt="users"
+            className="w-[8rem] object-contain"
+          />
         </div>
         <div
           data-aos="fade-left"
@@ -55,8 +61,8 @@ const Testimonials = () => {
               className="testimonial-item bg-white opacity-0 absolute inset-0 w-full h-full max-h-fit flex flex-col justify-center p-5 rounded-md border-2 border-black/60 shadow-2xl"
             >
               <img
-                width="auto"
-                height="auto"
+                width="75"
+                height="75"
                 loading="lazy"
                 src={item.img}
                 className="w-[7rem] h-[7rem] object-contain rounded-full absolute top-[-3.5rem] left-1/2 -translate-x-1/2 sm:-translate-x-0 sm:left-[-3.5rem] sm:top-1/2 sm:-translate-y-1/2"
