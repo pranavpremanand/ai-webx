@@ -1,3 +1,5 @@
+import logoImg from './assets/images/logo/logo1.png'
+
 // all services
 export const services = [
   {
@@ -52,6 +54,7 @@ export const services = [
 
 // details
 export const companyDetails = {
+  logo:logoImg,
   phone: "+916301350318",
   email: "info@aiwebx.in",
   location: "10-47 Ambedkar Nagar, Jawaharnagar, Turumalagiri, Hyderabad - 500087, Telangana, India",

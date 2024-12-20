@@ -58,7 +58,7 @@ const Testimonials = () => {
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="testimonial-item bg-white opacity-0 absolute inset-0 w-full h-full max-h-fit flex flex-col justify-center p-5 rounded-md border-2 border-black/60 shadow-2xl"
+              className="testimonial-item bg-white opacity-0 absolute inset-0 w-full h-full flex flex-col justify-center p-5 rounded-md border-2 border-black/60 shadow-2xl"
             >
               <img
                 width="75"
