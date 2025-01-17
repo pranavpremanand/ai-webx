@@ -8,10 +8,10 @@ import Footer from "../../components/Footer";
 import LeadForm from "../../components/LeadForm";
 import line from "../../assets/images/line.png";
 import {
-  companyDetails,
   industriesCompanyServe,
+  localBusinessSchema,
   services,
-} from "../../constant";
+} from "../../data/constant";
 import aboutImg from "../../assets/images/home-aboutus.webp";
 import whoWeAre from "../../assets/images/who-we-are.webp";
 import ServiceItemCard from "../../components/Website/ServiceItemCard";
@@ -21,24 +21,6 @@ import WorkFlow from "../../components/WorkFlow";
 // Lazy load components for better performance
 const Header = React.lazy(() => import("../../components/Website/Header"));
 const Banner = React.lazy(() => import("../../components/Website/Banner"));
-
-// Schema markup for Local Business
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "AI WebX",
-  description:
-    "AI WebX is a globally recognized leader in delivering cutting-edge technology solutions including AI, Machine Learning, Blockchain, and Cloud Computing.",
-  image: companyDetails.logo,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "10-47 Ambedkar Nagar, Jawaharnagar",
-    addressLocality: "Turumalagiri",
-    addressRegion: "Telangana",
-    postalCode: "500087",
-    addressCountry: "India",
-  },
-};
 
 const Home = () => {
   return (

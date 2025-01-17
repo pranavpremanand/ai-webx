@@ -58,9 +58,6 @@ const Banner = ({ page }) => {
             loading="lazy"
             id="robot"
             src={robot}
-            srcset="/static/media/ai-robot-300w.png 300w,
-             /static/media/ai-robot-600w.png 600w,
-             /static/media/ai-robot-1200w.png 1200w"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
             alt="robot"
             width="600"

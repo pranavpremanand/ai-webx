@@ -2,18 +2,17 @@ import React from "react";
 import img1 from "../../assets/images/services-details/arvr1.jpg";
 import img2 from "../../assets/images/services-details/arvr2.jpeg";
 import { Link } from "react-router-dom";
-import { services } from "../../constant";
-import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
+import { services } from "../../data/constant";
+import { IoIosArrowRoundBack } from "react-icons/io";
 
 const VRAndAR = () => {
   const prev = services[4];
-  const next = services[6];
   return (
     <div className="flex flex-col gap-10">
       <img
-loading="lazy"        data-aos="fade-up"
+        loading="lazy"
+        data-aos="fade-up"
         src={img1}
-        
         className="h-[25rem] object-cover rounded-3xl object-center"
         alt="vr and ar"
       />
@@ -56,7 +55,7 @@ loading="lazy"        data-aos="fade-up"
       <div className="grid lg:grid-cols-2 gap-7">
         <div className="h-full w-full">
           <img
-loading="lazy"            
+            loading="lazy"
             src={img2}
             className="h-full max-h-[20rem] w-full lg:max-h-max object-contain rounded-md"
             alt="vr and ar"
@@ -106,7 +105,8 @@ loading="lazy"
       <div className="flex w-full justify-between gap-6">
         <Link to={prev.link} className="flex items-center gap-3">
           <img
-loading="lazy"            src={prev.icon}
+            loading="lazy"
+            src={prev.icon}
             alt=""
             className="w-[3rem] h-[3rem] hidden sm:inline-block object-contain grayscale"
           />

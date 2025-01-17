@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../../assets/images/services-details/cloudcomputing1.jpg";
 import img2 from "../../assets/images/services-details/cloudcomputing2.png";
 import { Link } from "react-router-dom";
-import { services } from "../../constant";
+import { services } from "../../data/constant";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 const CloudComputing = () => {

@@ -14,6 +14,8 @@ import { LoadingSpinner } from "./components/LoadingSpinner";
 const Home = React.lazy(() => import("./pages/Website/Home"));
 const AboutUs = React.lazy(() => import("./pages/Website/AboutUs"));
 const OurServices = React.lazy(() => import("./pages/Website/OurServices"));
+const Blogs = React.lazy(() => import("./pages/Website/Blogs"));
+const BlogDetails = React.lazy(() => import("./pages/Website/BlogDetails"));
 const ServicePageLayout = React.lazy(() =>
   import("./components/Website/ServicePageLayout")
 );
@@ -65,6 +67,8 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/services" element={<OurServices />} />
             <Route path="/contact" element={<ContactUs />} />
+            <Route path="/blogs" element={<Blogs />} />
+            <Route path="/blogs/:title" element={<BlogDetails />} />
 
             {/* Services Detail Routes with Layout */}
             <Route path="/services" element={<ServicePageLayout />}>

@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 import { SpinnerContext } from "../components/SpinnerContext";
-import { companyDetails } from "../constant";
+import { companyDetails } from "../data/constant";
 import line from "../assets/images/line.png";
 
 const InquiryForm = () => {

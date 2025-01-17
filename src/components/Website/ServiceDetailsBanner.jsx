@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { services } from "../../constant";
+import { services } from "../../data/constant";
 import bannerImg from "../../assets/images/services-details/services-details-page-banner.jpg";
 
 const ServiceDetailsBanner = () => {

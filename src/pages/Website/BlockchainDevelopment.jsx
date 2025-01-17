@@ -2,7 +2,7 @@ import React from "react";
 import img1 from "../../assets/images/services-details/blockchain1.jpg";
 import img2 from "../../assets/images/services-details/blockchain2.jpeg";
 import { Link } from "react-router-dom";
-import { services } from "../../constant";
+import { services } from "../../data/constant";
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 const BlockchainDevelopment = () => {
