@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
 import img from "../assets/images/contact.webp";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import { companyDetails } from "../data/constant";
 import toast from "react-hot-toast";
 import { SpinnerContext } from "./SpinnerContext";
 
 const LeadForm = () => {
+  const navigate = useNavigate();
   const { setSpinner } = useContext(SpinnerContext);
   const {
     register,
@@ -36,9 +38,10 @@ const LeadForm = () => {
       to: companyDetails.email,
       subject: "You have a new message from AI WebX",
       body: emailBody,
+      name:"AI WebX"
     };
 
-    await fetch("https://smtp-api-tawny.vercel.app/send-email", {
+    await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -46,9 +49,15 @@ const LeadForm = () => {
       body: JSON.stringify(payload),
     })
       .then((response) => response.json())
-      .then(() => {
-        toast.success("Email sent successfully");
-        reset();
+      .then((res) => {
+        if (res.error) {
+          toast.error(res.error);
+        } else {
+          toast.success("Email sent successfully");
+          reset();
+          // Redirect to thank you page
+          navigate("/thank-you");
+        }
       })
       .catch((error) => {
         toast.error(error.message);

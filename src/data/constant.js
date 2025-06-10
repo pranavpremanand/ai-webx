@@ -57,7 +57,8 @@ export const services = [
 export const companyDetails = {
   logo: logoImg,
   phone: "+916301350318",
-  email: "info@aiwebx.in",
+  email: "mpranavprem@gmail.com",
+  // email: "info@aiwebx.in",
   location:
     "10-47 Ambedkar Nagar, Jawaharnagar, Turumalagiri, Hyderabad - 500087, Telangana, India",
 };

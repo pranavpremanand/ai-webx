@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="300px" viewBox="0 0 400 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Thank You</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient">
+            <stop stop-color="#010C2A" offset="0%"></stop>
+            <stop stop-color="#219BE4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="400" height="300"></rect>
+        <g transform="translate(50, 50)">
+            <circle fill="#F5F7FA" cx="150" cy="100" r="100"></circle>
+            <path d="M150,20 C190,20 230,60 230,100 C230,140 190,180 150,180 C110,180 70,140 70,100 C70,60 110,20 150,20 Z" stroke="url(#linearGradient)" stroke-width="6"></path>
+            <path d="M110,100 L140,130 L190,80" stroke="#219BE4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></path>
+            <text font-family="Roboto Slab, serif" font-size="24" font-weight="bold" fill="#010C2A" text-anchor="middle" x="150" y="220">
+                Thank You!
+            </text>
+        </g>
+    </g>
+</svg>
